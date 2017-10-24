@@ -1,0 +1,166 @@
+@mixin dx-modal-bs {
+	
+		& .dx-close {
+		width:24px;
+		height:24px;
+		@media (min-width:$breakpoint) {
+			width:30px;
+			height:30px;
+		}
+	
+	}
+	& {
+		font-family:'Source Sans Pro';
+		background: rgba(0, 0, 0, 0.3) ;
+		padding-bottom:0;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	& .modal-dialog {
+		box-shadow:none;
+		@media (min-width: $breakpoint) {
+			width: 750px;
+			margin: 30px auto;
+		}
+	}
+	& .modal-content {
+		@include border-radius(0);
+		border:none;
+	}
+	& .close {
+		font-family: none;
+		font-size: inherit;
+		font-weight: normal;
+		line-height: 1;
+		position: static;
+		float: none;
+		float: right;
+		width: auto;
+		min-width: 0;
+		height: auto !important;
+		margin-top: 0;
+		padding: 0;
+		cursor: pointer;
+		text-align: center;
+		text-transform: none;
+		opacity: 1;
+		color: inherit;
+		border: none;
+		border-radius: 0;
+		background: none;
+		text-shadow: none;
+		-webkit-appearance: none;
+		filter: alpha(opacity=100);
+	}
+	& .close img {
+		height:24px;
+		width:24px;
+		pointer-events:none;
+		@media (min-width:$breakpoint) {
+			height:30px;
+			width:30px;
+		}
+	}
+	& .close span {
+		pointer-events:none;
+		font-size:inherit;
+		position:relative;
+		height:auto;
+		line-height:1;
+		width:auto;
+		right:$sp1;
+		left:auto;
+		top:4px;
+		@media (min-width:$breakpoint) {
+			top:10px;
+			right:5px;
+			margin-right:10px;
+		}
+	}
+	& .dx-header {
+		border-bottom:0;
+		padding:0;
+		border-bottom-color:#fff !important;
+		line-height:1.2;
+		font-size:28px;
+		margin-right:40px;
+		color:#002554;
+		@media (min-width:$breakpoint) {
+			padding-top:$sp1;
+			padding-left:$sp2;
+			padding-right:$sp2;
+		}
+		@media (min-width:460px) {
+			margin-right:0;
+		}
+		@media (min-width:$breakpoint) {
+			font-size:30px;
+		}
+	}
+	& .dx-footer {
+		display:none;
+	}
+	& .dx-subhead {
+		padding-top:$sp2;
+		line-height:1.2;
+		font-size:24px;
+		color:#002554;
+		margin-bottom:$sp2;
+		@media (min-width:$breakpoint) {
+			padding-left:$sp2;
+			padding-right:$sp2;
+		}
+	}
+	& .dx-contact-info {
+		border-bottom:2px solid #eee;
+		@include clearfix;
+		font-size:16px;
+		font-weight:400;
+		margin-bottom:0;
+		margin-top:0;
+		&:last-child {
+			border-bottom:none;
+		}
+	}
+	& .dx-contact-info div {
+		&::before {
+			font-size: 20px;
+			content:attr(data-label);
+			line-height:1.2;
+			display:block;
+			font-weight:500;
+			margin-bottom: $sp2;
+		}
+	}
+	& .dx-contact-info div ul {
+		list-style-type:none;
+		margin:0 0 $sp2 0;
+		padding:0;
+
+	}
+	& .dx-contact-info div ul li {
+		display:block;
+		line-height:$sp3;
+
+	}
+	& .dx-contact-info div ul li b {
+		font-weight:600;
+	}
+	& .dx-contact-info .contact-section {
+		margin-bottom: $sp4;
+
+		@media (min-width:$breakpoint) {
+			padding-left:$sp2;
+			padding-right:$sp2;
+		}
+
+		@media (min-width:$breakpoint) {
+			@include gallery(isolate 1 of 2 (60px 4px));
+		}
+		@media (min-width:$breakpoint) {
+			@include gallery(isolate 1 of 3 (60px 4px));
+		}
+
+	}
+}
+

@@ -1,0 +1,30 @@
+@mixin page-header {
+
+	@include flexbox;
+	@include flex-direction(row);
+	@include justify-content(flex-end);
+	[dir=rtl] & {
+	@include justify-content(flex-start);
+		
+
+	}
+	
+	@include align-items(center);
+	background:#fff;
+	position:relative;
+	.logo {
+		position:absolute;
+		width: u(96);
+		height: u(48);
+		left:50%;
+		margin-left: -#{u(48)} ;
+		top:50%;
+		margin-top: -#{u(24)} ;
+		display:block;
+		
+	}
+	@include flex(0 0 5rem );
+	@media (min-width:$bp2) {
+		@include flex(0 0 5rem );
+	}
+}

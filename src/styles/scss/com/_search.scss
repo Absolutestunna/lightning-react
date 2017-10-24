@@ -1,0 +1,17 @@
+@mixin search {
+	img {
+		width:u(20);
+		height:u(20);
+		position:absolute;
+		right:$sp2;
+
+		top: 50%;
+		margin-top: -#{u(10)};
+	
+	}
+	margin-bottom:$sp2;
+	@media (min-width:$breakpoint) {
+		margin-bottom:0;
+	}
+
+}

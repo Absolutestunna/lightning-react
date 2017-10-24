@@ -1,0 +1,13 @@
+@mixin accordion-item {
+	input[type="checkbox"] {
+		@include hidden;
+	}
+
+	&:last-of-type {
+//	border-bottom:1px solid #C4C4C4;
+		
+	}
+
+
+	
+}

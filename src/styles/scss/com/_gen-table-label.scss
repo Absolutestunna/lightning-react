@@ -1,0 +1,11 @@
+@mixin gen-table-label {
+	&:before {
+		content:attr(data-label);
+		font-weight:600;
+		font-size:u(14);
+		display:block;
+		line-height:1.2;
+	}
+
+
+}

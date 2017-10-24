@@ -1,0 +1,14 @@
+/* WRAP message-area */
+
+
+@import '../com/area'; .message-area { @import 'message-area'; @extend %area; & { @include help-area_Hj5t9; }
+
+	@import '../com/message-items'; @import 'message-items'; .message-items { @extend %message-items; @include message-items_Hj5t9; } 
+	@import '../com/message-hd'; @import 'message-hd'; .message-hd { @extend %message-hd; @include message-hd_Hj5t9; } 
+	@import '../com/message-text'; @import 'message-text'; .message-text { @extend %message-text; @include message-text_Hj5t9; } 
+	@import '../com/accordion-item'; @import 'accordion-item'; .item { @extend %accordion-item; @include accordion-item_Hj5t9; } 
+	@import '../com/accordion-label'; @import 'accordion-label'; .item > label { @extend %accordion-label; @include accordion-label_Hj5t9; } 
+	@import '../com/accordion-content'; @import 'accordion-content'; .item > .item-content { @extend %accordion-content; @include accordion-content_Hj5t9; } 
+	@import 'Dynamic';
+
+}

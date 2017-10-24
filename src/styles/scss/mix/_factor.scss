@@ -1,0 +1,87 @@
+@mixin factor($prop,$unit) {
+
+	@if $prop == "padding-top" {
+		padding-top:$unit * $factor0;
+		@media (min-width:$bp1) { padding-top:$unit * $factor1; }
+		@media (min-width:$bp2) { padding-top:$unit * $factor2; }
+		@media (min-width:$bp3) { padding-top:$unit * $factor3; }
+	}
+
+	@if $prop == "padding-bottom" {
+		padding-bottom:$unit * $factor0;
+		@media (min-width:$bp1) { padding-bottom:$unit * $factor1; }
+		@media (min-width:$bp2) { padding-bottom:$unit * $factor2; }
+		@media (min-width:$bp3) { padding-bottom:$unit * $factor3; }
+	}
+
+
+	@if $prop == "padding-left" {
+		padding-left:$unit * $factor0;
+		@media (min-width:$bp1) { padding-left:$unit * $factor1; }
+		@media (min-width:$bp2) { padding-left:$unit * $factor2; }
+		@media (min-width:$bp3) { padding-left:$unit * $factor3; }
+	}
+	
+
+	@if $prop == "padding-right" {
+		padding-right:$unit * $factor0;
+		@media (min-width:$bp1) { padding-right:$unit * $factor1; }
+		@media (min-width:$bp2) { padding-right:$unit * $factor2; }
+		@media (min-width:$bp3) { padding-right:$unit * $factor3; }
+	}
+	
+	
+	@if $prop == "top" {
+		top:$unit * $factor0;
+		@media (min-width:$bp1) { top:$unit * $factor1; }
+		@media (min-width:$bp2) { top:$unit * $factor2; }
+		@media (min-width:$bp3) { top:$unit * $factor3; }
+	}
+	
+	@if $prop == "right" {
+		right:$unit * $factor0;
+		@media (min-width:$bp1) { right:$unit * $factor1; }
+		@media (min-width:$bp2) { right:$unit * $factor2; }
+		@media (min-width:$bp3) { right:$unit * $factor3; }
+	}
+	
+	
+	
+	@if $prop == "left" {
+		left:$unit * $factor0;
+		@media (min-width:$bp1) { left:$unit * $factor1; }
+		@media (min-width:$bp2) { left:$unit * $factor2; }
+		@media (min-width:$bp3) { left:$unit * $factor3; }
+	}
+	
+	
+	@if $prop == "max-width" {
+		max-width:$unit * $factor0;
+		@media (min-width:$bp1) { max-width:$unit * $factor1; }
+		@media (min-width:$bp2) { max-width:$unit * $factor2; }
+		@media (min-width:$bp3) { max-width:$unit * $factor3; }
+	}
+
+	@if $prop == "font-size" {
+		font-size:$unit * $factor0;
+		@media (min-width:$bp1) { font-size:$unit * $factor1; }
+		@media (min-width:$bp2) { font-size:$unit * $factor2; }
+		@media (min-width:$bp3) { font-size:$unit * $factor3; }
+	}
+	
+	
+	@if $prop == "height" {
+		height:$unit * $factor0;
+		@media (min-width:$bp1) { height:$unit * $factor1; }
+		@media (min-width:$bp2) { height:$unit * $factor2; }
+		@media (min-width:$bp3) { height:$unit * $factor3; }
+	}
+	@if $prop == "min-width" {
+		min-width:$unit * $factor0;
+		@media (min-width:$bp1) { min-width:$unit * $factor1; }
+		@media (min-width:$bp2) { min-width:$unit * $factor2; }
+		@media (min-width:$bp3) { min-width:$unit * $factor3; }
+	}
+	
+
+}

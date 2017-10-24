@@ -1,0 +1,40 @@
+@mixin dx-info {
+	display:inline-block;
+	.trigger {
+		cursor:pointer;
+		position:relative;
+		display:inline-block;
+		width:18px;
+		height:18px;
+		float:none;
+		&:before {
+			@include border-radius(20px);
+			content:'';
+			background:$color-blue-light;
+			text-align:center;
+			position:absolute;
+			left:0;
+			right:0;
+			bottom:-2px;
+			width:18px;
+			height:18px;
+		}
+		&:after {
+			content: 'i';
+			color:#fff;
+			position:absolute;
+			font-weight:bold;
+			text-align:center;
+			bottom:0;
+			left:0;
+			right:0;
+			width:18px;
+			height:19px;
+		}
+	}
+
+
+	
+
+
+}

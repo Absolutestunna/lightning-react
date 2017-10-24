@@ -1,0 +1,35 @@
+@mixin banner-photo {
+	.banner-name {
+		@extend %h2-font-size;
+		padding-bottom:$sp2;
+		color:#fff;
+	}
+	display:block;
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	color:#fff;
+	@include padh;
+	@include padv;
+	.dx-col {
+		max-width:$largest-width;
+		margin-left:auto;
+		margin-right:auto;
+		text-align:center;
+		position:relative;
+	}
+	.banner-content {
+		max-width:800px;
+		margin-left:auto;
+		margin-right:auto;
+		padding-bottom:$sp2;
+	}
+	.banner-cta {
+		@include small-font-size;
+		font-weight:600;
+	}
+	a {
+		color:#fff;
+		text-decoration:underline;
+	}
+}

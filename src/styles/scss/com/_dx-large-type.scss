@@ -1,0 +1,16 @@
+@mixin dx-large-type {
+	padding-left:$sp2;
+	padding-right:$sp2;
+	font-size:38px;
+	color: #666;
+	
+
+	> .dx-col {
+		font-weight:600;
+		text-align:center;
+	
+
+	}
+	
+
+}

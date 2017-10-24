@@ -1,0 +1,39 @@
+
+$short-window-height: 900px;
+
+$Healb-m-nav-height: 74px;
+$Healb-d-nav-height: 80px;
+
+$Healb-other-menu-height: 40px;
+$height-d: $Healb-d-nav-height + $Healb-other-menu-height;
+
+
+$Healb-toggle-width: 40px;
+
+$Healb-nav-tabs-unselected: #8CB3DE;
+$Healb-navy-dark: #001B64;
+$Healb-navy: #0057B8;
+$Healb-source: 'Source Sans Pro';
+$Healb-body-font: 'futurapt-bold';
+$Healb-m-nav-tabs-font-size: 16px;
+$Healb-d-nav-tabs-font-size: 16px;
+$Healb-d-nav-tabs-top-font-size:14px;
+$Healb-nav-background-color: $Healb-navy;
+$Healb-m-nav-height: 74px;
+$Healb-d-nav-height: 80px;
+$Healb-other-menu-height: 40px;
+
+$Healb-tabs-other-background:$light-grey;
+
+
+$Healb-m-toggle-width: 60px;
+$Healb-m-toggle-height: $Healb-m-nav-height;
+
+$Healb-d-toggle-width: 60px;
+$Healb-d-toggle-height: $Healb-d-nav-height;
+
+
+$height-m: ($Healb-m-nav-height * 2);
+$height-d: $Healb-d-nav-height + $Healb-other-menu-height;
+$height-m-search: ($Healb-m-nav-height * 3);
+

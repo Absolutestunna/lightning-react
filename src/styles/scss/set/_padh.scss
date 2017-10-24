@@ -1,0 +1,4 @@
+@mixin padh {
+	@include padl;
+	@include padr;
+}

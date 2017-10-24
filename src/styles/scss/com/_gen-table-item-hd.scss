@@ -1,0 +1,10 @@
+@mixin gen-table-item-hd {
+	display:none;
+	@media (min-width:$bp3-wide) {
+		margin-top:$sp2;
+		li {
+			@include gen-table-label;
+		}
+		@include flexbox;
+	}			
+}

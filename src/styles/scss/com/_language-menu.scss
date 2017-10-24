@@ -1,0 +1,40 @@
+@mixin language-menu {
+	input[type=checkbox] {
+		@include hidden;
+	}
+	i {
+		font-style:normal;
+	}
+	padding-right:$pad-unit-trimmed;
+	@media (min-width:$bp1-wide) {
+		padding-right:$pad-unit;
+	}
+	.lang, .change {
+		text-align:center;
+		@media (min-width:$bp1-wide) {
+			display:inline;
+		}
+	}
+
+	.change {
+		cursor:pointer;
+		&:hover {
+
+
+		text-decoration:underline;
+	}
+		color: #0D5F9F;
+		&:before { 
+			content:'(';
+			display:inline-block;
+			text-decoration:none;
+			color: #4A4A49;
+		}
+		&:after { 
+			content:')';
+			display:inline-block;
+			text-decoration:none;
+			color: #4A4A49;
+		}
+	}
+}

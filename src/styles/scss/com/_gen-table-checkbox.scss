@@ -1,0 +1,27 @@
+@mixin gen-table-checkbox {
+
+			&:before {
+				display:none !important;
+			}
+	
+	
+			@include flex(0 0 20px);
+			position:absolute;
+			padding-right:$sp2;
+			@media (min-width:$bp2) {
+			padding-right:$sp3;
+			}
+			@media (min-width:$bp3) {
+			padding-right:$sp2;
+			}
+			
+			padding-left:0;
+			left:$sp2;
+			top:$sp1;
+			@media (min-width:$bp1-wide) {
+				position:static;
+			}
+	
+
+
+}

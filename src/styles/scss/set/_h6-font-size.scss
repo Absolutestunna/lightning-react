@@ -1,0 +1,9 @@
+@mixin h6-font-size {
+font-size: $h6-font-size;
+	@include h6-letter-spacing;
+
+
+}
+
+
+

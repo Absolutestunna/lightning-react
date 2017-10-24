@@ -1,0 +1,10 @@
+@mixin h6 {
+	@extend %hdef;
+	@extend %h6-font-size;
+	@extend %h6-line-height;
+
+	
+}
+
+
+

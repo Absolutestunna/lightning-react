@@ -1,0 +1,95 @@
+
+// $sp1: 8px;
+// $sp2: 16px;
+// $sp3: 24px;
+// $sp4: 32px;
+// $sp5: 40px;
+// $sp6: 48px;
+// $sp7: 56px;
+// $sp8: 64px;
+// $sp9: 72px;
+// $sp10: 80px;
+// $sp11: 88px;
+// $sp12: 96px;
+// $sp13: 104px;
+// $sp14: 112px;
+// $sp15: 120px;
+// $sp16: 128px;
+// $sp17: 136px;
+// $sp18: 144px;
+// $sp19: 152px;
+// $sp20: 160px;
+// $sp21: 168px;
+
+
+$base-sp: 1rem;
+
+$sp1: $base-sp * .5;
+$sp2: $base-sp * 1;
+$sp3: $base-sp * 1.5;
+$sp4: $base-sp * 2;
+$sp5: $base-sp * 2.5;
+$sp6: $base-sp * 3;
+$sp7: $base-sp * 3.5;
+$sp8: $base-sp * 4;
+$sp9: $base-sp * 4.5;
+$sp10: $base-sp * 5;
+$sp11: $base-sp * 5.5;
+$sp12: $base-sp * 6;
+$sp13: $base-sp * 6.5;
+$sp14: $base-sp * 7;
+$sp15: $base-sp * 7.5;
+$sp16: $base-sp * 8;
+$sp17: $base-sp * 8.5;
+$sp18: $base-sp * 9;
+$sp19: $base-sp * 9.5;
+$sp20: $base-sp * 10;
+$sp21: $base-sp * 10.5;
+$sp22: $base-sp * 11;
+$sp23: $base-sp * 11.5;
+$sp24: $base-sp * 12;
+
+
+$pad-1-5: $pad-unit * 1.5;
+
+$pad-bp0: $sp2;
+$pad-bp1: $sp3;
+$pad-bp2: $sp3;
+$pad-bp3: $sp4;
+
+// could revisit this:
+$def-spacing: 1rem;
+$def-space:8px;
+
+// from dx-pagehead
+$def-pad: 8px;
+
+
+// the old technique that i have to keep for now:
+
+$sp1: 8px;
+$sp2: 16px;
+$sp3: 24px;
+$sp4: 32px;
+$sp5: 40px;
+$sp6: 48px;
+$sp7: 56px;
+$sp8: 64px;
+$sp9: 72px;
+$sp10: 80px;
+$sp11: 88px;
+$sp12: 96px;
+$sp13: 104px;
+$sp14: 112px;
+$sp15: 120px;
+$sp16: 128px;
+$sp17: 136px;
+$sp18: 144px;
+$sp19: 152px;
+$sp20: 160px;
+$sp21: 168px;
+
+
+$dx-custom-input-spacing-left: $sp2;
+$dx-custom-select-spacing-left: $sp2;
+

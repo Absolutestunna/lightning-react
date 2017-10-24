@@ -1,0 +1,14 @@
+@mixin dx-nav-simple {
+	display:none;
+	background:$Healb-nav-background-color;
+	padding-top:$sp2;
+	padding-bottom:$sp2;
+	padding-left:$sp2;
+	padding-right:$sp2;
+	.details-content-only & {
+		display:none;
+		@media (max-width:$breakpoint) {
+			display:block;
+		}
+	}
+}

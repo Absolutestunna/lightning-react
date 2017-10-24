@@ -1,0 +1,42 @@
+$orange: #E16D20;
+$p-color: #333;
+
+
+$form-element-color: #001B64;
+$form-element-border-on: #4887F7;
+$form-element-color-muted: transparentize($form-element-color,.5);
+$form-element-border-off: transparentize($form-element-color,.8);
+
+$color-turquoise: #009CA6;
+
+$color-blue-default: #001E62;
+$color-blue-light: #0057B8;
+
+
+$error-red: #DF4139;
+$green: #21A000;
+$yellow: #FCB925;
+$light-grey:#EEF1F7;
+$bright-green: #50D986;
+$very-dark-blue: #002554;
+
+$disabled-text: #888;
+
+
+$dx-custom-input-border-color-on: #00A4E4;
+$dx-custom-input-error-red: #DF4139;
+$dx-custom-input-input-color: #001B64;
+$dx-custom-input-label-border: #CBD1E0;
+$dx-custom-input-label-lg-color: #8999B9;
+$dx-custom-input-label-sm-color: #7A96CB;
+
+
+$dx-custom-select-border-color-on: #4887F7;
+$dx-custom-select-error-red: #DF4139;
+$dx-custom-select-input-color: #001B64;
+$dx-custom-select-label-border: #CBD1E0;
+$dx-custom-select-label-lg-color: #8999B9;
+$dx-custom-select-label-sm-color: #7A96CB;
+
+
+

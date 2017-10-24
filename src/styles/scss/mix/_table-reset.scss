@@ -1,0 +1,8 @@
+@mixin table-reset {
+	table, thead, tbody, tr, th,td {
+		display:block;
+		text-align:left;
+	}
+}
+
+

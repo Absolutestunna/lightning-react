@@ -1,0 +1,7 @@
+@mixin hxl {
+	@extend %hdef;
+	@extend %hxl-font-size;
+	@extend %hxl-line-height;
+}
+
+

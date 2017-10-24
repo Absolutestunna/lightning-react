@@ -1,0 +1,65 @@
+
+.message-items { 
+
+.item > input[type="checkbox"] ~ .item-content {
+	opacity:0;
+	max-height:1px;
+	overflow:hidden;
+	padding-top:0;
+	padding-bottom:0;
+//	height:0;
+	@include transition(max-height .25s cubic-bezier(0.115, 0.065, 0.000, 1.000), opacity .5s cubic-bezier(0.115, 0.065, 0.000, 1.000), padding .5s cubic-bezier(0.115, 0.065, 0.000, 1.000));
+}
+
+
+	
+
+	.item > input[type="checkbox"]:checked ~ .item-content {
+		height:auto;
+		opacity:1;
+		overflow:visible;
+		max-height:400px;
+
+	padding-top:$sp1;
+	padding-bottom:$pad-unit-trimmed;
+
+	@include transition(max-height .75s cubic-bezier(0.115, 0.065, 0.000, 1.000), opacity .75s cubic-bezier(0.115, 0.065, 0.000, 1.000), padding .75s cubic-bezier(0.115, 0.065, 0.000, 1.000));
+	
+		
+	}
+
+
+	.item label {
+		&:hover {
+			//text-decoration:underline;
+		}
+		position:relative;
+		> img {
+			@include h1-font-size;
+
+			@include transition(transform .25s cubic-bezier(0.115, 0.065, 0.000, 1.000) );
+
+			width: u(20);
+			height: u(20);
+			font-weight:100;
+			position:absolute;
+			right:$pad-unit-trimmed;
+			@media (min-width:$bp1) {
+			right:$pad-unit;
+		}
+			top:50%;
+			margin-top: -#{u(10)};
+		}
+	}
+
+	.item > input[type="checkbox"]:checked ~ label { 
+		> img {
+			-webkit-transform: rotate(135deg);
+			-ms-transform: rotate(135deg);
+			transform: rotate(135deg);
+		}
+	}
+
+
+}
+

@@ -1,0 +1,55 @@
+@mixin pill-name-account {
+	position:relative;
+	
+	
+	.modal-pill-delete {
+		cursor:pointer;
+		position:absolute;
+		@include border-radius(20px);
+
+		padding:u(5);
+		right:$sp2;
+		top:50%;
+		margin-top: -#{u(15)};
+		position:right;
+		
+		display:block;
+		width:u(30);
+		height:u(30);
+	}
+
+	margin-left:$sp1  * .5;
+	margin-right:$sp1  * .5;
+	padding-left:$sp3;
+	padding-right:$sp6;
+	padding-top:$sp1;
+	padding-bottom:$sp1;
+
+	background:#EDF7F8;
+	@include border-radius(60px);
+	
+	
+	@include flexbox; 
+	@include flex-direction(column);
+	@include justify-content(center);
+	@include align-items(justify);
+	
+		color:#002554;
+	
+		height:100%;
+	
+	@include small-font-size;
+	[data-type="Annuitant"] {
+		font-weight: 600;
+		div {
+			display:inline-block;
+		}
+	}
+	[data-type="Owner"] {
+		&:before {
+			content:attr(data-type) ':';
+	}
+}
+
+	
+}

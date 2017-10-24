@@ -1,0 +1,97 @@
+@mixin dx-modal {
+	& {
+		font-family:'Source Sans Pro';
+		margin-top: 30px;
+		max-width:750px;
+		color:#333;
+		padding-bottom:0;
+		margin-left:auto;
+		margin-right:auto;
+		@media (min-width:$breakpoint) {
+			margin:30px auto;
+		}
+	}
+	& > .dx-col {
+		margin:10px;
+		padding:$sp2;
+		@media (min-width:$breakpoint) {
+			padding:$sp4;
+		}
+		background:#fff;
+	}
+	& .dx-modal-close {
+		margin-top:0;
+		margin-right:15px;
+	}
+
+	& .dx-modal-close img {
+		width:24px;
+		height:24px;
+		@media (min-width:$breakpoint) {
+			width:30px;
+			height:30px;
+		}
+	}
+	& .dx-header {
+		line-height:1;
+		font-size:28px;
+		margin-right:40px;
+		color:#002554;
+		margin-bottom:$sp4;
+		@media (min-width:460px) {
+			margin-right:0;
+		}
+		@media (min-width:$breakpoint) {
+			font-size:30px;
+		}
+	}
+	& .dx-subhead {
+		padding-top:$sp2;
+		line-height:1;
+		font-size:24px;
+		color:#002554;
+		margin-bottom:$sp2;
+	}
+	& .dx-contact-info {
+		@include clearfix;
+		font-size:16px;
+		font-weight:400;
+		margin-bottom:0;
+		margin-top:0;
+		border-bottom:2px solid #eee;
+		&:last-child { 
+			border-bottom:none;
+		}
+	}
+	& .dx-contact-info div {
+		&::before {
+			font-size: 20px;
+			content:attr(data-label);
+			line-height:1.2;
+			display:block;
+			font-weight:500;
+			margin-bottom: $sp2;
+		}
+	}
+	& .dx-contact-info div ul {
+		list-style-type:none;
+		margin:0 0 $sp2 0;
+		padding:0;
+	}
+	& .dx-contact-info div ul li {
+		display:block;
+		line-height:$sp3;
+	}
+	& .dx-contact-info div ul li b {
+		font-weight:600;
+	}
+	& .dx-contact-info .contact-section {
+		margin-bottom: $sp4;
+		@media (min-width:$breakpoint) {
+			@include gallery(isolate 1 of 2 (60px 4px));
+		}
+		@media (min-width:$breakpoint) {
+			@include gallery(isolate 1 of 3 (60px 4px));
+		}
+	}
+}

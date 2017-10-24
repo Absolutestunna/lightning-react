@@ -1,0 +1,7 @@
+@mixin p-font-size {
+	font-size: $p-font-size;
+	@include p-letter-spacing;
+}
+
+
+

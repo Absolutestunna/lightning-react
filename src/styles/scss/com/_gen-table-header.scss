@@ -1,0 +1,39 @@
+@mixin gen-table-header {
+
+
+	padding-top:$sp2;
+	.item + & {
+		border-top:1px solid #ddd;
+
+		padding-top:$sp4;
+	}
+	padding-bottom:$sp2;
+	padding-left:$sp2;
+	@media (min-width:$bp1) { 
+	}
+	@media (min-width:$bp1-wide) { 
+	}
+
+	@media (min-width:$bp2) { 
+		//		padding-bottom:$pad-unit;
+		padding-bottom:$sp3;
+	}
+
+	@media (min-width:$bp3) { 
+		//		padding-bottom:0;
+		padding-left: $pad-unit;
+		padding-top:$sp1;
+	}
+	@media (min-width:$bp3-wide) { 
+		padding-top:$sp4;
+		padding-bottom:$sp1;
+	}
+
+	@include h4;
+
+
+
+
+
+
+}

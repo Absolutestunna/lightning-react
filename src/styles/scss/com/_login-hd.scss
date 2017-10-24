@@ -1,0 +1,8 @@
+@mixin login-hd {
+	@include font-futura;
+	@include font-weight-700;
+	@include h1-font-size;
+	@media (min-width:$bp2) {
+	@include hxl-font-size;
+	}
+}

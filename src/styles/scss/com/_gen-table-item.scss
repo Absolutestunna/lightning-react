@@ -1,0 +1,48 @@
+@mixin gen-table-item {
+
+	
+	
+
+	/* table-item_Hhpra */
+//	.item {
+		margin-top:$sp2;
+		/* -- table-labels_Hhpra */
+		li {
+			&:before {
+				content:attr(data-label);
+				font-weight:600;
+				font-size:u(14);
+				display:block;
+				line-height:1.2;
+			}
+		}
+		/* --- */
+		li {
+			&:before {
+				margin-bottom:$sp1;
+			}
+		}
+		@media (min-width:$bp1-wide) { 
+		}
+		@media (min-width:$bp2) { 
+			margin-top:0;
+			border-top:1px solid #ddd;
+			&:last-of-type {
+			border-bottom:1px solid #ddd;
+		}
+	
+		}
+		@media (min-width:$bp3-wide) {
+			/* -- table-labels_Hhpra(none) */
+			li {
+				&:before {
+					display:none;
+				}
+			}
+			/* --- */
+		}
+//	}
+
+
+
+}

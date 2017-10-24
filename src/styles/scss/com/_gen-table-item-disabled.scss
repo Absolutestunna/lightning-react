@@ -1,0 +1,16 @@
+@mixin gen-table-item-disabled {
+
+	color:$disabled-text;
+	a {
+		color:$disabled-text;
+	}
+	.dx-checkbox {
+		label  {
+			pointer-events:none;
+			visibility:hidden;
+		}
+	}
+
+	
+
+}

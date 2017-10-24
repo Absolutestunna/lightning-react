@@ -1,0 +1,173 @@
+@mixin dx-custom-input {
+
+	position:relative;
+	.eid-check,
+	.email-check {
+		display:block;
+		display:none;
+		position:absolute;
+		height:u(30);
+		width:u(37);
+		margin-top: -#{u(15)};
+		top:50%;
+		right:0;
+		margin-right: $sp2;
+
+	}
+	input:not([type='checkbox']) {
+		@include appearance(none);
+		@include border-radius(0);
+		outline: none;
+		width: 100%;
+		color: $dx-custom-input-input-color;
+		position: static;
+		top:0;
+		line-height: $dx-custom-input-label-line-height - u(18);
+		line-height: 1;
+		padding-top: u(22);
+		height: $dx-custom-input-label-line-height * 1.05;
+		padding-left: $dx-custom-input-spacing-left;
+		padding-right: $dx-custom-input-spacing-left;
+		font-size: $dx-custom-input-label-lg-font-size;
+		font-family: inherit;
+		border: u(1) solid $dx-custom-input-label-border;
+		&:required {
+			box-shadow:none !important;
+
+		}
+		&:invalid {
+			box-shadow:none !important;
+
+		}
+		&::-ms-clear, &::-ms-reveal {
+			display: none !important;
+
+		}
+		@include placeholder {
+			display:none;
+
+		}
+		&:disabled {
+			background:#eee;
+
+		}
+
+	}
+	label.label {
+		p {
+			margin:0;
+		}
+		
+		display:block;
+		pointer-events:none;
+		top:0;
+		position:absolute;
+		left: $dx-custom-input-spacing-left  + 1px;
+		right: $dx-custom-input-spacing-left  + 1px;
+		text-overflow:ellipsis;
+		white-space:nowrap;
+		overflow:hidden;
+		top:u(15);
+		font-size:$dx-custom-input-label-lg-font-size;
+		color: $dx-custom-input-label-lg-color;
+		@include transition(all .2s);
+
+	}
+	input:not([type='checkbox']):focus {
+		border:u(1) solid $dx-custom-input-border-color-on;
+		font-size:$dx-custom-input-label-lg-font-size;
+
+	}
+	input:not([type='checkbox'])[readonly='readonly'] , input[readonly]  {
+		border:u(1) solid $dx-custom-input-label-border;
+		cursor:pointer;
+		&:hover {
+			border:u(1) solid #aaa;
+
+		}
+
+	}
+	input:not([type='checkbox']):focus ~ label,
+	input:not([type='checkbox']):valid ~ label,
+	input:not([type='checkbox']):active ~ label,
+	input:not([type='checkbox']):disabled ~ label,
+	input:not([type='checkbox'])[readonly='readonly']  ~ label,
+	input:not([type='checkbox'])[readonly]  ~ label {
+		top:u(6);
+		font-size: $dx-custom-input-label-sm-font-size;
+		color:$dx-custom-input-label-sm-color;
+
+	}
+	/* 
+	input[type='password']:focus,
+	input[type='password']:valid,
+	input[type='password']:active,
+	input[type='password']:disabled,
+	input[type='password'][readonly='readonly'],
+	input[type='password'][readonly] {
+	font-size:30px;
+	letter-spacing:2px;
+	line-height:16px !important;
+
+	}
+	 */
+	&.select {
+
+	}
+	/* Commented by Annuities DEV Team */
+	/*
+	.dx-hide-show {
+	position:absolute;
+	right:0;
+	top:u(14);
+	right:u(20);
+
+	}
+	.dx-eye-on {
+	margin-top:u(5);
+
+	}
+	.dx-eye-off, .dx-eye-on {
+	display:none;
+
+	}
+	&.password-is-visible {
+	.dx-eye-off {
+	display:block;
+
+	}
+
+	}
+	&.password-is-hidden {
+	.dx-eye-on {
+	display:block;
+
+	}
+
+	}
+	 */
+	/* Commented by Annuities DEV Team */
+	&.has-error {
+		input {
+			border: u(1) solid $dx-custom-input-error-red;
+
+		}
+		.has-error-text {
+			line-height:1.1;
+			padding-top:u(6);
+			display:block !important;
+			color:$dx-custom-input-error-red;
+
+		}
+
+	}
+	&.eid-check-successful,
+	&.email-check-successful {
+		.email-check {
+			display:block;
+
+		}
+
+	}
+
+}

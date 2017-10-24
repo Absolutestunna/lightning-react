@@ -1,0 +1,8 @@
+@mixin modal-col-header1 {
+//	.listbox-head {
+		@include h4;
+		margin-bottom:$sp2;
+		color:#002554;
+//	}
+	
+}

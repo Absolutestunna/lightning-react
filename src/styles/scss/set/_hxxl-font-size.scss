@@ -1,0 +1,4 @@
+@mixin hxxl-font-size {
+	font-size: $hxxl-font-size;
+	@include hxxl-letter-spacing;
+}

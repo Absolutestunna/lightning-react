@@ -1,0 +1,21 @@
+@mixin dx-checkbox {
+
+	label {
+		@include notouch;
+		display:block;
+		img {
+			display:block;
+			&[class$="on"] {
+				display:none;
+			}
+		}
+	}
+	input:checked + label {
+		img[class$="off"] {
+			display:none;
+		}
+		img[class$="on"] {
+			display:block;
+		}
+	}
+}

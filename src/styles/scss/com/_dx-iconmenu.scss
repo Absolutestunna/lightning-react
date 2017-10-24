@@ -1,0 +1,200 @@
+@mixin dx-iconmenu {
+	color:$color-blue-default;	
+	margin-top:40px;
+	@media (max-width:$breakpoint) {
+		margin-top:60px;
+		margin-bottom:40px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	.dx-col {
+		margin:auto;
+		width:100%;
+		@include flexbox;
+		@include flex-direction(row);
+		@include justify-content(space-around);
+		//@include align-content(flex-end);
+		@include flex-grow(1);
+		@media (max-width:$breakpoint) {
+			display:block;
+		}
+	}
+	ul {
+		@media (max-height:$breakpoint) {
+			height:auto;
+		}
+		@include flex(1);
+		position:relative;
+		list-style-type:none;
+		padding:0;
+		margin:0;
+		text-align:center;
+		transition: all 0.2s ease;
+		img[class^="dx-icon-"] {
+			margin-left:auto;
+			margin-right:auto;
+		}
+		@media (max-width:$breakpoint) {
+			max-width:460px;
+			margin-left:auto;
+			margin-right:auto;
+			width:auto;
+			text-align:left;
+			display:block;
+			border-top:1px solid #ddd;
+			&:last-of-type {
+				border-bottom:1px solid #ddd;
+			}
+		}
+	} 
+	li {
+		height:100%;
+		@include flexbox;
+		@include flex-direction(column);
+		@include justify-content(flex-end);
+		@include flex-basis(0);
+		@media (max-width:$breakpoint) {
+			display:block;
+			max-width:460px;
+			margin-left:auto;
+			margin-right:auto;
+			position:relative;
+		}
+		.dx-iconmenu-name {
+			min-height:90px;
+			@media (max-width:$breakpoint) {
+				min-height:0;
+			}
+		}
+		.dx-iconmenu-image {
+			height:80px;
+		}
+		.dx-iconmenu-image,
+		.dx-iconmenu-name,
+		.dx-iconmenu-button {
+			@include flex(1 1 auto);
+			@media (max-width:$breakpoint) {
+				display:block;
+			}
+		}
+		.dx-iconmenu-image {
+			@media (max-width:$breakpoint) {
+				display:block;
+				height:auto;
+				display:none;
+			}
+		}
+		.dx-iconmenu-name {
+			font-size:20px;
+			line-height:1.3;
+			@include flexbox;
+			@include flex-direction(column);
+			@include justify-content(center);
+			@media (max-width:$breakpoint) {
+				padding-bottom:0;
+			}
+			padding-left:1rem;
+			padding-right:1rem;
+			@media (max-width:$breakpoint) {
+				height:auto;
+				font-size:18px;
+				line-height:80px;
+				white-space:nowrap;
+			}
+
+			> div, > span {
+				color:#666;
+				@include transition(.5s padding-left);
+				@media(max-width:508px) {
+				}
+				@media (max-width:$breakpoint) {
+					max-width:90%;
+				}
+				&.ellipsis {
+					overflow:hidden;
+					text-overflow:ellipsis;
+					white-space:nowrap;
+				}
+			}
+						span.label {
+					color:$color-blue-default;	
+					display:block;
+					font-size:16px;
+					padding-bottom:6px;
+				@media (max-width:$breakpoint) {
+				display:none;
+				}
+
+			}
+			span.label + span.content {
+				font-size: 18px;
+			}
+			div {
+				&:before {
+					content:attr(data-label);
+					display:block;
+					margin-bottom:$sp1;
+					color:$color-blue-default;	
+					font-size:16px;
+					@media (max-width:$breakpoint) {
+						display:none;
+					}
+				}
+			}
+		}
+		.dx-iconmenu-button {
+			padding-top:1rem;
+			@media (max-width:$breakpoint) {
+				padding-top:0;
+			}
+			@include flex(1);
+			.bttn {
+				min-width:140px;
+				
+				@media (max-width:$breakpoint) {
+					height: auto;
+					min-width: 0;
+					padding: 0;
+					background: none;
+					border: none;
+					border-radius: 0;
+					font-weight: normal;
+					font-size: 16px;
+					text-align: left;
+					text-transform: none;
+					position: relative;
+					position:absolute;
+					left:0;
+					right:0;
+					width:100%;
+					top:0;
+					bottom:0;
+					text-indent:-9999px;
+				}
+			}
+		}
+	}
+	.dx-arrow-right {
+		position:absolute;
+		right:20px;
+		top:30px;
+		width:11px;
+		height:21px;
+		@media (min-width:$breakpoint) {
+			display:none;
+		}
+	}
+	img {
+		display:block;
+		margin:auto;
+		&.dx-icon-lock {
+			width:48px;
+		}
+		&.dx-icon-cellphone {
+			width:36px;
+		}
+		&.dx-icon-envelope {
+			width:62px;
+		}
+	}
+}

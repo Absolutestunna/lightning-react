@@ -1,0 +1,44 @@
+@mixin login_Hi2rd {
+	.dx-custom-input {
+	}
+	.dx-password-area {
+		.dx-password-toggle {
+			@include hidden;
+		}
+		.input-area {
+		position:relative;
+	}
+		input.dx-password-toggle ~ .label-visibility-toggle {
+			cursor:pointer;
+			height:u(30);
+			width:u(37);
+			margin-top: -#{u(15)};
+			top:50%;
+			margin-right: $sp2;
+			display:block;
+			position:absolute;
+			right:0;
+			.eye-off, .eye-on {
+				width:100%;
+				height:100%;
+			}
+			.eye-off {
+				display:none;
+			}
+			.eye-on {
+				display:block;
+			}
+		}
+		input.dx-password-toggle:checked ~ .label-visibility-toggle {
+			.eye-on {
+				display:none;
+			}
+			.eye-off {
+				display:block;
+			}
+		}
+		input.dx-password-toggle:checked ~ .dx-password {
+			border-color:#D96C2B;
+		}
+	}
+}

@@ -1,0 +1,16 @@
+@mixin spacing-search-visible {
+	padding-top:($Healb-m-nav-height * 3); 
+	&:before {
+		height: ($Healb-m-nav-height * 3); 
+		content:'';
+		background:#fff;
+		position:absolute;
+		top:0;
+		z-index:0;
+		left:0;
+		right:0;
+	}
+	@media (min-width:$breakpoint) {
+		padding-top:$Healb-d-nav-height + $Healb-other-menu-height; 
+	}
+}

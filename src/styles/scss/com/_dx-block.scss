@@ -1,0 +1,73 @@
+@mixin dx-block {
+
+
+	.dx-wrap-products-subpage.dx-comp-optional & {
+		@extend %padt;
+		@extend %padh;
+		
+	}
+
+		.dx-block + & {
+//			padding-top:$sp3;
+
+		}
+
+		.dx-text-simple & {
+			padding-top:0;
+			padding-bottom:0;
+		}
+
+		&:last-of-type {
+			@extend %padb;
+			
+		}
+		
+
+
+		&.width-1 > .dx-col { max-width: $def-width * 1; }
+	&.width-2 > .dx-col { max-width: $def-width * 2; }
+	&.width-3 > .dx-col { max-width: $def-width * 3; }
+	&.width-4 > .dx-col { max-width: $def-width * 4; }
+	&.width-5 > .dx-col { max-width: $def-width * 5; }
+	&.width-6 > .dx-col { max-width: $def-width * 6; }
+	&.width-7 > .dx-col { max-width: $def-width * 7; }
+	&.width-8 > .dx-col { max-width: $def-width * 8; }
+	&.width-9 > .dx-col { max-width: $def-width * 9; }
+	&.width-10 > .dx-col { max-width: $def-width * 10; }
+	&.width-11 > .dx-col { max-width: $def-width * 11; }
+	&.width-12 > .dx-col { max-width: $def-width * 12; }
+
+	&.padtop-0 > .dx-col { padding-top:0; }
+	&.padtop-1 > .dx-col { padding-top:$def-pad * 1;}
+	&.padtop-2 > .dx-col { padding-top:$def-pad * 2;}
+	&.padtop-3 > .dx-col { padding-top:$def-pad * 3;}
+	&.padtop-4 > .dx-col { padding-top:$def-pad * 4;}
+	&.padtop-5 > .dx-col { padding-top:$def-pad * 5;}
+	&.padtop-6 > .dx-col { padding-top:$def-pad * 6;}
+	&.padtop-7 > .dx-col { padding-top:$def-pad * 7;}
+	&.padtop-8 > .dx-col { padding-top:$def-pad * 8;}
+	&.padtop-9 > .dx-col { padding-top:$def-pad * 9;}
+	&.padtop-10 > .dx-col { padding-top:$def-pad * 10;}
+	&.padtop-11 > .dx-col { padding-top:$def-pad * 11;}
+	&.padtop-12 > .dx-col { padding-top:$def-pad * 12;}
+
+	&.padbtm-0 > .dx-col { padding-bottom:0; }
+	&.padbtm-1 > .dx-col { padding-bottom:$def-pad * 1;}
+	&.padbtm-2 > .dx-col { padding-bottom:$def-pad * 2;}
+	&.padbtm-3 > .dx-col { padding-bottom:$def-pad * 3;}
+	&.padbtm-4 > .dx-col { padding-bottom:$def-pad * 4;}
+	&.padbtm-5 > .dx-col { padding-bottom:$def-pad * 5;}
+	&.padbtm-6 > .dx-col { padding-bottom:$def-pad * 6;}
+	&.padbtm-7 > .dx-col { padding-bottom:$def-pad * 7;}
+	&.padbtm-8 > .dx-col { padding-bottom:$def-pad * 8;}
+	&.padbtm-9 > .dx-col { padding-bottom:$def-pad * 9;}
+	&.padbtm-10 > .dx-col { padding-bottom:$def-pad * 10;}
+	&.padbtm-11 > .dx-col { padding-bottom:$def-pad * 11;}
+	&.padbtm-12 > .dx-col { padding-bottom:$def-pad * 12;}
+	
+
+	
+
+
+
+}

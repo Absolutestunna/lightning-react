@@ -1,0 +1,91 @@
+$dx-custom-select-label-lg-font-size: u(18);
+$dx-custom-select-label-lg-font-size: u(20);
+$dx-custom-select-label-line-height: u(54);
+$dx-custom-input-label-lg-font-size: u(18);
+$dx-custom-input-label-lg-font-size: u(20);
+$dx-custom-input-label-line-height: u(54);
+$dx-custom-input-label-sm-font-size: u(14);
+$dx-custom-select-label-sm-font-size: u(14);
+$form-element-font-size-lg: u(20);
+$form-element-font-size-sm: u(14);
+///
+
+
+
+$font-futura: "Futura", "Source Sans Pro", Arial, sans-serif;
+$font-source: "Source Sans Pro", Arial, sans-serif;
+
+
+
+$fontbase: 1rem;
+
+
+$hxxl-letter-spacing: -.02em;
+$hxl-letter-spacing: -.02em;
+$h1-letter-spacing: -.02em;
+$h2-letter-spacing: -.02em;
+$h3-letter-spacing: -.01em;
+$h4-letter-spacing: -.01em;
+$h5-letter-spacing: .01em;
+$h6-letter-spacing: .01em;
+$p-letter-spacing: .01em;
+$small-letter-spacing: .02em;
+
+
+// 1.18 ratio! 
+// http://www.modularscale.com/?16&px&1.18
+
+
+$hxxl-font-size: $fontbase * 3.185; 
+$hxl-font-size: $fontbase * 2.7; 
+$h1-font-size: $fontbase * 2.288; 
+$h2-font-size: $fontbase * 1.939; 
+$h3-font-size: $fontbase * 1.643; 
+$h4-font-size: $fontbase * 1.392; 
+$h5-font-size: $fontbase * 1.18; 
+$h6-font-size: $fontbase * 1; 
+$p-font-size: $fontbase * 1;
+$small-font-size: $fontbase * 0.847;
+
+
+
+
+//old!
+//$hxxl-font-size: $fontbase * 2.625; 
+//$hxl-font-size: $fontbase * 2.375; 
+//$h1-font-size: $fontbase * 2.2; 
+//$h2-font-size: $fontbase * 1.625; 
+//$h3-font-size: $fontbase * 1.5; 
+//$h4-font-size: $fontbase * 1.25; 
+//$h5-font-size: $fontbase * 1.125; 
+//$h6-font-size: $fontbase * 1; 
+//$p-font-size: $fontbase * 1;
+//$small-font-size: $fontbase * .9;
+
+
+
+
+$hxxl-line-height: 1.1;
+$hxl-line-height: 1.1;
+$h1-line-height: 1.1;
+$h2-line-height: 1.15;
+$h3-line-height: 1.25;
+$h4-line-height: 1.4;
+$h5-line-height: 1.4;
+$h6-line-height: 1.4;
+$p-line-height: 1.4;
+$small-line-height: 1.4;
+
+
+$hxxl-margin-bottom: $hxxl-font-size;
+$hxl-margin-bottom: $hxl-font-size;
+$h1-margin-bottom: $h1-font-size;
+$h2-margin-bottom: $h2-font-size;
+$h3-margin-bottom: $h3-font-size;
+$h4-margin-bottom: $h4-font-size;
+$h5-margin-bottom: $h5-font-size;
+$h6-margin-bottom: $h6-font-size;
+$p-margin-bottom: $p-font-size;
+$small-margin-bottom: $small-font-size;
+
+

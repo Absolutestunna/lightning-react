@@ -1,0 +1,25 @@
+@mixin dx-pill {
+	display:inline-block;
+	vertical-align:middle;
+//	margin-right:6px;
+
+	&::before {
+		display:block;
+		@include border-radius(30px);
+		font-size:14px;
+		font-weight: 600;
+		line-height:$sp3;
+		padding-left:$sp1;
+		padding-right:$sp1;
+		color:#fff;
+		content:attr(data-label-full);
+		text-transform:uppercase;
+	}
+	&[data-label-full="NIGO"] {
+		&::before { background:#DA3130; } 
+	}
+
+	&[data-label-full^="Active"] {
+		&::before { background:#28B03E; }
+	}
+}

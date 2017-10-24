@@ -1,0 +1,40 @@
+@mixin mh-top {
+			
+	
+}
+@mixin mh-defaults {
+	& {
+		@content
+	}
+}
+@mixin mh-closed {
+	&.masthead-closed {
+		@media (max-height: $short-window-height) {
+			@content
+		}
+	}
+}
+@mixin mh-closed-desktop {
+	&.masthead-closed {
+		@media (min-width:$breakpoint) and (max-height: $short-window-height) {
+			@content
+		}
+	}
+}
+@mixin mh-open {
+	&.masthead-open {
+		@media (max-height: $short-window-height) {
+			@content
+		}
+	}
+}
+@mixin mh-open-desktop {
+	&.masthead-open {
+		@media (min-width:$breakpoint) and (max-height: $short-window-height) {
+			@content
+		}
+	}
+}
+
+
+

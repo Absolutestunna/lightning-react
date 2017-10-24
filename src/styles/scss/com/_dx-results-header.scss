@@ -1,0 +1,35 @@
+@mixin dx-results-header {
+
+	display:none;
+	@media (min-width:$breakpoint) {
+		border-bottom:1px solid #BED1EA;
+		display:block;
+	
+
+	ul {
+		list-style-type:none;
+		padding:0;
+		margin:0;
+		display:table;
+		width:100%;
+
+		li {
+			padding-top:$sp3;
+			padding-bottom:$sp3;
+
+			display:table-cell;
+			width:50%;
+			font-size:14px;
+			color:#4A4A49;
+
+		}
+		.primary-owner { text-align:left;
+			padding-left:$sp2;
+		}
+		.amount-expected { text-align:right;
+			padding-right:$sp2;
+		}
+	}
+}
+
+}

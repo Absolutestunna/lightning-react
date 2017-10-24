@@ -1,0 +1,8 @@
+@mixin trans($attr) {
+	@include transition(.2s $attr cubic-bezier(0.115, 0.065, 0.000, 1.000));
+}
+@mixin trans2($attr1,$attr2) {
+	@include transition(.2s $attr1 cubic-bezier(0.115, 0.065, 0.000, 1.000), .2s $attr2 cubic-bezier(0.115, 0.065, 0.000, 1.000));
+}
+
+

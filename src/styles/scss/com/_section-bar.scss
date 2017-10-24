@@ -1,0 +1,38 @@
+@mixin section-bar {
+
+	
+
+	@media (min-width:$bp3) {
+		padding-left:$pad-unit * .5;
+		padding-right:$pad-unit * .5;
+	}
+	@include padb;
+	> .dx-col {
+		padding-left:$pad-unit-trimmed ;
+		padding-right:$pad-unit-trimmed ;
+		@include flexbox;
+		@include flex-direction(row);
+		@include justify-content(flex-start);
+		@include align-items(center);
+		@media (min-width:$bp3) {
+			padding-left:$pad-unit * .5;
+			padding-right:$pad-unit * .5;
+		}
+
+		height:$pad-unit * 1.5;
+		@media (min-width:$bp2) {
+		height:$pad-unit * 1.75;
+		}
+		@media (min-width:$bp3) {
+		height:$pad-unit * 2;
+		}
+		
+
+		background:#EBF2FA;
+		max-width:980px;
+		margin-left:auto;
+		margin-right:auto;
+		@include h6;
+		color:#002554;
+	}
+}

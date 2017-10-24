@@ -1,0 +1,11 @@
+@mixin custom-input_Hi2o8 {
+	
+
+
+	margin-bottom: $pad-unit-trimmed;
+	@media (min-height: 400px) and (min-width: $bp1-wide) {
+	
+	margin-bottom: $pad-unit;
+}
+
+}

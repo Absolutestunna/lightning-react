@@ -1,0 +1,65 @@
+@mixin table-excel {
+	min-width:900px;
+	li {
+
+		height:$sp5;
+
+		padding-top:$sp1 * .5;
+		padding-right:$sp1;
+		padding-bottom:$sp1 * .5;
+		padding-left:$sp1;
+
+		vertical-align:middle;
+		&:before {
+			display:none;
+		}
+	}
+	.cview-table {
+	position:relative;
+		min-width:900px;
+		display:table;
+		margin-left:auto;
+		margin-right:auto;
+		border-collapse: collapse;
+
+	}
+	li {
+		border:1px solid #ddd;
+		&:first-of-type {
+			border-left:none;
+		}
+		&:last-of-type {
+			border-right:none;
+		}
+		
+	}
+	ul {
+		display:table-row;
+
+		&:first-of-type {
+		position: -webkit-sticky;
+position: -moz-sticky;
+position: -ms-sticky;
+position: -o-sticky;
+position: sticky;
+top: 0;
+			li {
+
+				height:$sp7;
+				border-top:none;
+				background: #EBF2FA;
+				border-bottom:none;
+				&:before {
+					content:attr(data-label);
+					font-weight:600;
+					font-size:u(14);
+					display:block;
+					line-height:1.2;
+				}
+			}
+		}
+	}
+	li {
+		display:table-cell;
+	}
+}

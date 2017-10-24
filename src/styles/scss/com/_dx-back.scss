@@ -1,0 +1,12 @@
+@mixin dx-back {
+
+	span {
+		cursor:pointer;
+		display:table;
+		img {
+			display:block;
+		}
+
+	}
+	
+}

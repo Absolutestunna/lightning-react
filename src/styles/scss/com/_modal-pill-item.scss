@@ -1,0 +1,19 @@
+@mixin modal-pill-item {
+
+	width:100%;
+	min-height:$sp9;
+	@include flex(0 1 auto);
+	@media (min-width:$bp1-wide) {
+		max-width:50%;
+		@include flex(0 1 auto);
+
+	}
+	@media (min-width:$bp2) {
+		max-width:33%;
+		@include flex(0 1 auto);
+
+	}
+	padding-bottom:$sp1;
+	padding-top:$sp1;
+
+}

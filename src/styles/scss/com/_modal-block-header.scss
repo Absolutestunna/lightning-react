@@ -1,0 +1,16 @@
+@mixin modal-block-header {
+	content:attr(data-block);
+	display:block;
+	border-bottom: 2px solid #E1E6EB;
+	
+//	border-top: 2px solid #E1E6EB;
+	border-left: 2px solid #E1E6EB;
+//	border-right: 2px solid #E1E6EB;
+	@include h6;	
+	padding-top:$sp3;
+	padding-bottom:$sp3;
+	padding-left:$sp1;
+	@media (min-width:$bp2) {
+		padding-left:$sp2;
+	}
+}

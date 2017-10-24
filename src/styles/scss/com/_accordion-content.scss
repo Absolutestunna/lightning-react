@@ -1,0 +1,31 @@
+@mixin accordion-content {
+
+	padding-left:$pad-unit-trimmed;
+	padding-right:$pad-unit-trimmed;
+	
+
+	@media (min-width:$bp1) {
+	
+	padding-left:$pad-unit;
+	padding-right:$pad-unit;
+}
+	@media (min-width:$bp1-wide) {
+		
+		
+		padding-left:$pad-unit;
+		padding-right:$pad-unit;
+
+	}
+	p {
+		margin-top:0;
+	}
+	
+	ul {
+		list-style-type: square;
+		padding-left:1.1rem;
+	}
+
+zoom: 100%;
+
+	
+}

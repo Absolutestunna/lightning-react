@@ -1,0 +1,140 @@
+html { @include factor(font-size,16px); box-sizing: border-box; }
+*, *:before, *:after { @extend %all-elements; }
+h1,h2,h3,h4,h5,h6 { @extend %all-headers; }
+body { @extend %body; 
+	color: #4A4A49;
+}
+a {
+	color: #0D5F9F;
+}
+footer { 
+	@extend %footer;
+}
+.login-wrap {
+	@include flexbox;
+	@include flex-direction(column);
+	height:100vh;
+	@include flex-basis(1);
+}
+@import 'com/page-header'; .page-header { @extend %page-header; }
+@import 'com/language-menu'; .page-header .language-menu { @extend %language-menu; }
+.page-header .language-menu {
+	position:relative;
+	#menu-dropdown {
+		@include notouch;
+		display:block;
+	}
+	.lang-menu-trigger {
+	}
+	#menuDiv-dropdown {
+		max-height:300px;
+		overflow:visible;
+		opacity:1;
+
+		&.invisible {
+	opacity:0; max-height:1px; overflow:hidden;
+		li {
+			opacity:1;
+		}
+	
+			
+		}
+		
+		&::after, &::before {
+			position:absolute;
+			content:"";
+			border-style: solid;
+			border-width: 0 12px 14px 12px;
+			border-top-color: transparent;
+			border-right-color: transparent;
+			border-left-color: transparent;
+			right:16px;
+		}
+		&::after {
+			border-bottom-color: #fff ;
+			top:-14px;
+		}
+		&::before {
+			border-bottom-color: rgba(0, 0, 0, 0.2)  ; 
+			top:-15px;
+		}
+		@include transition(opacity .5s cubic-bezier(0.115, 0.065, 0.000, 1.000), max-height .25s cubic-bezier(0.115, 0.065, 0.000, 1.000)  );
+		li {
+			@include transition(opacity 1s cubic-bezier(0.115, 0.065, 0.000, 1.000)  );
+		}
+		z-index:100;
+		position:absolute;
+		top:$sp7;
+		@media (min-width:$bp1-wide) {
+			top:$sp4;
+		}
+		box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23), 0 -1px 1px 0 rgba(0, 0, 0, 0.1)  ;
+		background:#fff;
+		@include border-radius(2);
+		right:$pad-unit-trimmed;
+		@media (min-width:$bp1-wide) {
+			right: $pad-unit;
+		}
+		width:u(120);
+		ul {
+			list-style-type:none;
+			padding:0;
+			margin:0;
+			padding:.1rem;
+		}
+		li {
+			@include h5-font-size;
+			@media (min-width:$bp1-wide) {
+				@include p-font-size;
+			}
+			//border-top:1px solid #eee;
+			&:first-of-type {
+				border-top:0;
+			}
+			a, span {
+				cursor:pointer;
+				color:#0D5F9F;
+				text-decoration:none;
+				display:block;
+				@include notouch;
+				padding: .5rem ($sp1 * 1.5);
+				@include border-radius(2px);
+				cursor:pointer;
+				&:hover {
+					background: #0D5F9F;
+					color:#fff;
+				}
+				&:active {
+					background: #0D5F9F;
+				}
+			}
+		}
+	}
+	input[type=checkbox] ~ .menu { 
+	
+	opacity:0; max-height:1px; overflow:hidden;
+
+}
+	input[type=checkbox]:checked ~ .menu { 
+		max-height:300px;
+		overflow:visible;
+		opacity:1;
+		li {
+			opacity:1;
+		}
+	}
+}
+.main-content {
+	@include flex(1 0 auto);
+	padding-top:$pad-unit-trimmed;
+	padding-bottom:200px;
+	@media (min-height: 400px) and (min-width: $bp1) {
+		padding-top:$pad-unit * 1.5;
+	}
+	@media (min-width:$bp1-wide) {
+	}
+	@include transition(.25s padding-top cubic-bezier(0.115, 0.065, 0.000, 1.000));
+	background:$body-bg;
+	> div {
+	}
+}

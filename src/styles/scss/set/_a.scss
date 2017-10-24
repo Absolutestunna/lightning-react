@@ -1,0 +1,11 @@
+@mixin a {
+	color: $color-blue-light;
+
+	text-decoration:none;
+	&:hover {
+		text-decoration:underline;
+	}
+
+}
+
+

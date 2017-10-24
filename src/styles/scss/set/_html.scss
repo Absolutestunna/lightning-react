@@ -1,0 +1,10 @@
+
+@mixin html {
+	box-sizing: border-box;
+	height:100%;
+	min-height:100vh;
+	@include factor(font-size,16px);
+
+}
+
+

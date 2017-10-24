@@ -1,0 +1,84 @@
+
+$custom-input-color: #001B64;
+$custom-input-border-default: #CBD1E0;
+
+$custom-input-label-top-mobile: .3rem;
+$custom-input-label-top: .33rem;
+
+$custom-input-top-mobile: 1.5rem;
+$custom-input-top: 1.2rem;
+
+$custom-input-placeholder-top: .95rem;
+
+
+@mixin custom-input {
+	position:relative;
+	input {
+		@extend %appearance-none;
+		@extend %outline-none;
+		@extend %border-radius-0;
+		@extend %p-margin-bottom;
+//		font-size: $custom-input-font-size-bg;
+		@extend %h4-font-size;
+		@extend %placeholder-display-none;
+		@extend %font-family-inherit;
+		width: 100%;
+		color: $custom-input-color;
+		border: 1px solid $custom-input-border-default;
+		height: $sp7;
+		padding-left:$sp2;
+		padding-top:$custom-input-top-mobile;
+		@media (min-width:$bp2) {
+		padding-top:$custom-input-top;
+
+	}
+		&:required, &:invalid {
+			box-shadow:none !important;
+		}
+		&::-ms-clear, &::-ms-reveal {
+			@extend %display-none-important;
+		}
+		&:disabled {
+			background:#eee;
+		}
+	}
+	label {
+		pointer-events:none;
+		position:absolute;
+		right:$sp8;
+//		font-size: $custom-input-font-size-bg;
+		@extend %h4-font-size;
+		left: 1.1rem ;
+		top:$custom-input-placeholder-top;
+		@extend %text-overflow-ellipsis;
+		color: #8999B9;
+		@include transition(all .2s);
+	}
+	input:focus {
+		border:1px solid #4887F7;
+	}
+	input:focus ~ label, 
+	input:valid ~ label, 
+	input:active ~ label, 
+	input:disabled ~ label {
+		top: $custom-input-label-top-mobile;
+		@media (min-width:$bp2) {
+		top: $custom-input-label-top;
+	}
+//		font-size: $custom-input-font-size-sm;
+		@extend %small-font-size;
+		font-weight:500;
+		color:#7A96CB;
+	}
+	&.has-error {
+		input {
+			border: 1px solid #DF4139;
+		}
+		.has-error-text {
+			line-height:1.1;
+			padding-top:6px;
+			display:block !important;
+			color:#DF4139;
+		}
+	}
+}

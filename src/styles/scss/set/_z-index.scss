@@ -1,0 +1,44 @@
+
+// nav
+.dx-wrap-performance:before { z-index:0; }
+.nav { z-index:2; }
+.nav-search-menu { z-index:2; }
+.nav-account-menu { z-index:3; }
+.nav-notification-menu { z-index:3; }
+.mobile-nav-visible .nav:after { z-index:3; } 
+.mobile-nav-visible .nav.search-visible:after { z-index:3; }
+.mobile-nav-visible .nav-tabs-other { z-index:4; }
+.mobile-nav-visible .nav-tabs { z-index:4; }
+.mobile-nav-visible .mobile-nav-toggle { z-index:5; }	
+
+// masthead
+.dx-wrap-pending .dx-masthead { z-index:0; }
+.dx-wrap-pending:before { z-index:0; }
+
+// input
+.dx-custom-input label { z-index:0;  } 
+.dx-custom-input-pending label { z-index:0; }
+[class^='dx-wrap-products']:before { z-index:0; }
+
+// select
+.dx-custom-select .dx-select-arrow { z-index:1;}
+.dx-custom-select-pending .dx-select-arrow { z-index:1;}
+.dx-custom-select .select-menu { z-index:1; }
+.dx-custom-select-pending .select-menu { z-index:1; }
+
+#custom-select1 ~ .select-menu { z-index:3;}
+#custom-select2 ~ .select-menu { z-index:2;}
+#custom-select3 ~ .select-menu { z-index:1;}
+
+// showmore
+[class^="dx-object"] .dx-showmore-toggle > .dx-col:before { z-index:0; }
+[class^="dx-object"] .dx-showmore-toggle > .toggler { z-index:1; }
+
+// other
+.dx-loading-animation { z-index:300; }
+
+[class^="dx-wrap-clientlist"] .dx-sort .menu { z-index:101; } // 101
+[class^="dx-wrap-clientlist"] [class^="dx-views"] .menu { z-index:100; }  // 101
+
+
+

@@ -1,0 +1,33 @@
+// NOTE: SEE this URL: https://github.com/sass/sass/issues/915
+
+
+// ====================================================================
+// Media
+// Prints out a media query from the breakpoints list 
+// ==================================================================== 
+@mixin media($key){ // @content
+    $bp:null;
+    @for $i from 1 through length($breakpoints){
+        $item:nth($breakpoints,$i);
+        @if(nth($item,1)==$key){ $bp:$item; }
+    }
+    $min:nth($bp,2) * 1px; 
+    $max:nth($bp,3) * 1px;
+    $mq:'screen and (min-width:'+$min+') and (max-width:'+$max+')'; 
+    @if($min and $max==0px){ $mq:'screen and (min-width:'+$min+')'; }
+    @if($min==0px and $max){ $mq:'screen and (max-width:'+$max+')'; }
+    @if($min==0px and $max==0px){ $mq:'all'; }
+    @media #{unquote($mq)}{ @content; }
+}
+
+
+// ==================================================================== 
+// MediaExtend
+// Places each extend within the each media directive of the breakpoint list
+// ==================================================================== 
+@mixin mediaExtend(){ // @content
+    @for $i from 1 through length($breakpoints){
+        $key:nth(nth($breakpoints,$i),1);
+        @include media($key){ @content; };
+    }
+}

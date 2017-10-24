@@ -1,0 +1,8 @@
+@mixin h2-font-size {
+font-size: $h2-font-size;
+
+@include h2-letter-spacing;
+
+
+}
+

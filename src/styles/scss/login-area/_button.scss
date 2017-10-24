@@ -1,0 +1,13 @@
+@mixin button_Hi2ok {
+//	margin-left:auto;
+//	margin-right:auto;
+	display:block;
+
+	margin-top:1rem;
+	
+	margin-bottom:$pad-unit-trimmed;
+	@media (min-width:$bp1-wide) {
+	margin-bottom:$pad-unit;
+}
+
+}

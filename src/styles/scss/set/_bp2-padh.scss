@@ -1,0 +1,6 @@
+@mixin bp2-padh {
+	@media (min-width:$bp2) {
+		padding-left: $pad-bp2;
+		padding-right: $pad-bp2;
+	}
+}

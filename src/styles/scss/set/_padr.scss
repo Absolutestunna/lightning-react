@@ -1,0 +1,19 @@
+@mixin padr {
+	padding-right:$pad-unit * $padh-trimmed;
+	@media (min-width:$bp1) {
+		padding-right:$pad-unit * $padh-trimmed;
+	}
+	@media (min-width:$bp1-wide) {
+		padding-right:$pad-unit;
+	}
+	@media (min-width:$bp2) {
+		padding-right:$pad-unit * $padh-trimmed;
+	}
+	@media (min-width:$bp3) {
+		padding-right:$pad-unit;
+	}
+	
+	
+
+
+}

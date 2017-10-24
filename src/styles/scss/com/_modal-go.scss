@@ -1,0 +1,28 @@
+@mixin modal-go {
+	cursor:pointer;
+	zoom:100%;
+	&:hover {
+		text-decoration:underline;
+	}
+	@include flexbox;
+	@include flex-direction(row);
+	@include justify-content(justify);
+	.text {
+		color: #0057B8;
+		font-weight:600;
+		padding-right:$sp1;
+	}
+	.dx-go-custom-view-desktop {
+		@include flex(0 0 15px);
+	//	display:none;
+		@media (min-width:$breakpoint) {
+			display:inline-block;
+		}
+		width:u(20);
+		height:u(20);
+		vertical-align:baseline;
+		margin-bottom: -#{u(2)};
+		line-height:1;
+		margin-left:u(4);
+	}
+}

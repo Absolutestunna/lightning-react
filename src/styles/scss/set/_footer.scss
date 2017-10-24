@@ -1,0 +1,66 @@
+$pending-footer-height1: 75px;
+$pending-footer-height2: 88px;
+$pending-footer-height3: 90px;
+
+$def-footer_padding: $def-spacing;
+
+@mixin footer {
+
+	height:auto;
+	background-color: #666;
+	color: #fff;
+//	padding:$def-footer_padding;
+@extend %padh;
+@extend %padv;
+	@media (min-width: $breakpoint) {
+		padding:$def-footer_padding + .5rem;
+	}
+		> .dx-col {
+			max-width:1400px;
+			margin:auto;
+			> div {
+				margin-top:.5rem;
+				margin-bottom:.5rem;
+			}
+		}
+	.footer-links {
+		@extend %marb;
+		ul {
+			list-style-type:none;
+			padding:0;
+			margin:0;
+			li {
+				display:inline-block;
+				margin-right:$sp2;
+				a {
+					display:block;
+					color:#fff;
+				}
+			}
+		}
+		&:last-of-type {
+		 margin-bottom:0;
+		}
+	}
+	.dx-wrap-pending + & { 
+		@media (min-width:$breakpoint) {
+			position:absolute;
+			bottom:0;
+			right:0;
+			left:0;
+			
+			height:$pending-footer-height1;
+		}
+		@media (min-width:800px) {
+			height:$pending-footer-height2;
+
+		}
+		@media (min-width:1200px) {
+			height:$pending-footer-height3;
+
+		}
+		
+	}
+}
+
+

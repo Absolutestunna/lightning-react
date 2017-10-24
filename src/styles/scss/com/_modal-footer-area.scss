@@ -1,0 +1,74 @@
+@mixin modal-footer-area {
+	border-top:1px solid #ccc;
+	text-align:left;
+	@media (min-width:$bp1) {
+		padding:$sp1;
+
+	}
+	> .dx-col {
+		padding-top:$sp1;
+		padding-bottom:$sp1;
+		@include flexbox;
+		@include flex-direction(row);
+		@include justify-content(space-between);
+		@include flex-wrap(wrap);
+		@include align-items(center);
+		.dx-custom-input {
+			@include flex(1 1 250px);
+			margin-top:$sp1 * .5;
+			margin-bottom:$sp1 * .5;
+			margin-left:$sp1;
+			margin-right:$sp1;
+
+			label {
+				color:#002554;
+			}
+			@media (min-width:$bp1) {
+				margin-top:$sp1;
+				margin-bottom:$sp1;
+			}
+		}
+		.row-buttons {
+			margin-top:$sp1 * .5;
+			margin-bottom:$sp1 * .5;
+			@media (min-width:$bp1) {
+				margin-top:$sp1;
+				margin-bottom:$sp1;
+			}
+			@include flex(1 1 300px);
+			@include flexbox;
+			@include flex-direction(row);
+			@include justify-content(justify);
+		}
+	}
+	button {
+		@include flex(1 1 auto);
+		margin-left:$sp1;
+		margin-right:$sp1;
+		min-width:none !important;
+	}
+
+	input:focus ~ label, input:valid ~ label, input:active ~ label, input:disabled ~ label, input[readonly="readonly"]  ~ label, input[readonly]  ~ label {
+		color:$dx-custom-input-label-sm-color !important;
+
+
+	}
+
+	.row-instructions {
+		padding-left:$sp2;
+		padding-right:$sp2;
+		height:$sp7;
+		@include flexbox;
+		@include flex-direction(row);
+		@include justify-content(center);
+		@include align-items(center);
+
+		@media (min-width:$bp1) {
+			padding-left:$sp2;
+			padding-right:$sp2;
+		}
+	}
+
+
+
+}

@@ -1,0 +1,21 @@
+@mixin gen-table-label($mode:default) {
+	@if $mode == "defaults" {
+		&:before {
+			content:attr(data-label);
+			font-weight:600;
+			font-size:14px;
+			display:block;
+			line-height:1.2;
+		}
+	}
+	@if $mode == "block" {
+		&:before {
+			display:block;
+		}
+	}
+	@if $mode == "none" {
+		&:before {
+			display:none;
+		}
+	}
+}

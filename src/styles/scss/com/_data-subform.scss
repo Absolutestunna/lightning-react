@@ -1,0 +1,56 @@
+@mixin data-subform {
+
+	padding-top:$sp1;
+	padding-bottom:$sp2;
+
+	[id^="cv-subform-trigger"] ~ label,
+	[id^="subform-trigger"] ~ label {
+		padding-left:$pad-unit;
+		@include notouch;
+		display:block;
+		position:relative;
+		&:before {
+			content:attr(data-title);
+			display:block;
+		}
+		img {
+			position:absolute;
+			left:0;
+			top:u(2);
+			display:block;
+			&[class$="on"] {
+				display:none;
+			}
+		}
+	}
+
+	[id^="cv-subform-trigger"]:checked ~ label,
+	[id^="subform-trigger"]:checked ~ label {
+		img[class$="off"] {
+			display:none;
+		}
+		img[class$="on"] {
+			display:block;
+		}
+	}
+
+	.subform-content {
+		padding-left:$pad-unit;
+		padding-top:$sp1;
+		.input-text {
+			padding:$sp1;
+			font-size:u(16);
+			line-height:$sp3;
+			width:100%;
+			font-family: 'Source Sans Pro';
+			max-width:$sp20;
+		}
+	}
+	
+
+	.subform-instructions {
+		@include small-font-size;
+		margin-bottom:$sp1;
+	}
+
+}

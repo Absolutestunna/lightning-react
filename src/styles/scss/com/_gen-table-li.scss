@@ -1,0 +1,25 @@
+@mixin gen-table-li {
+	/* --------------------- */
+	/* table-li_Hhpra */
+//	li {
+		line-height:1.2;
+		padding:$sp1 0 $sp2 0;
+		@include flex(1 1 200px);
+		@media (min-width:$bp1-wide) { 
+			@include flex(1 1 200px);
+		}
+		@media (min-width:$bp2) { 
+			//				@include padh;
+			padding-top:0;
+			padding-bottom:0;
+			@include flex(1 1 200px);
+		}
+		@media (min-width:$bp3-wide) {
+			padding-left:$sp2;
+			padding-right:$sp2;
+			@include flex(1 1 90px);
+			margin-bottom:0;
+		}
+//	}
+
+}

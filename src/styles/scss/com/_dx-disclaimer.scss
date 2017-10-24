@@ -1,0 +1,30 @@
+@mixin dx-disclaimer {
+	text-align:left;
+	color:#333;
+	
+
+
+	.section {
+		margin-bottom:$sp3;
+	}
+	.header {
+		font-weight:600;
+		
+		margin-bottom:$sp1;
+		color:$very-dark-blue;
+	}
+	ul {
+		margin:0;
+		padding:0;
+		list-style-type:none;
+		li {
+			margin-bottom:$sp1;
+			&:before {
+				content:'- ';
+			}
+		}
+	} 
+	p {
+		margin-top:0;
+	}
+}

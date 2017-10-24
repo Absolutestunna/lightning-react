@@ -1,0 +1,59 @@
+@mixin gen-table-ul {
+	/* --------------------- */
+	/* table-ul_Hhpra */
+//	ul {
+		width:100%;
+		list-style:none;
+		height:100%;
+		margin:0;
+		padding:0;
+		padding-left:$sp2;
+		padding-right:$sp2;
+			position:relative;
+		@media (min-width:$bp1-wide) { 
+			@include flex(1 1 200px);
+			@include flex-direction(row);
+			@include flex-direction(column);
+			@include flexbox;
+			padding-top:$sp1;
+			padding-bottom:$sp1;
+			&:first-of-type {
+				&:after {
+					display:none;
+				}
+			}
+		}
+		@media (min-width:$bp2) {
+			padding-bottom:$sp2;
+			padding-left:0;
+			padding-right:0;
+		}
+		@media (min-width:$bp1-wide) { 
+			@include flex(1 1 auto);
+			@include flex-direction(row);
+		}
+		@media (min-width:$bp2) { 
+		}
+		@media (min-width:$bp3-wide) {
+			padding-top:0;
+			padding-bottom:0;
+			&:after {
+				display:none;
+			}
+			@include justify-content(space-between);
+			@include flex-direction(row);
+			@include align-items(center);
+		}
+		&:first-of-type {
+			li:first-of-type {
+				padding-left:0;
+			}
+		}
+		&:last-of-type {
+			li:last-of-type {
+				padding-right:0;
+			}
+		}
+	//}
+
+}

@@ -1,0 +1,27 @@
+@mixin button {
+	@include font-futura;
+	@include appearance-none;
+	@include h5-font-size;
+	@include outline-none;
+	@include border-none;
+	height:3.5rem;
+	width:100%;
+	border:0;
+	padding:0;
+	padding-left:$sp2;
+	padding-right:$sp2;
+	border-radius: $sp7;
+	font-weight: 700;
+	cursor:pointer;
+	display:inline-block;
+	text-transform: uppercase;
+	position: relative;
+	&.orange {
+		background:$orange;
+		color:#fff;
+		&:hover {
+		background:darken($orange,5%);
+		}
+	}
+}
+

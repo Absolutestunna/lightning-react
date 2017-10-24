@@ -1,0 +1,154 @@
+@import 'all-elements'; %all-elements { @include all-elements; }
+@import 'all-headers'; %all-headers { @include all-headers; }
+
+@import 'html'; %html { @include html; }
+@import 'app'; %app { @include app; }
+@import 'hr'; %hr { @include hr; }
+@import 'body'; %body { @include body; } 
+@import 'a'; %a { @include a; }
+@import 'wbr'; %wbr { @include wbr; }
+@import 'footer'; %footer { @include footer; }
+
+
+
+
+
+
+
+@import 'width-1'; %width-1 { @include width-1 }
+@import 'width-2'; %width-2 { @include width-2 }
+@import 'width-3'; %width-3 { @include width-3 }
+@import 'width-4'; %width-4 { @include width-4 }
+@import 'width-5'; %width-5 { @include width-5 }
+@import 'width-6'; %width-6 { @include width-6 }
+@import 'width-7'; %width-7 { @include width-7 }
+@import 'width-8'; %width-8 { @include width-8 }
+@import 'width-9'; %width-9 { @include width-9 }
+@import 'width-10'; %width-10 { @include width-10 }
+@import 'width-11'; %width-11 { @include width-11 }
+@import 'width-12'; %width-12 { @include width-12 }
+
+
+
+// SETTINGS 
+@import 'p-color'; %p-color { @include p-color; }
+@import 'appearance-none'; %appearance-none { @include appearance-none; }
+@import 'border-radius-0'; %border-radius-0 { @include border-radius-0; }
+@import 'border-none'; %border-none { @include border-none; }
+@import 'display-none'; %display-none { @include display-none; }
+@import 'display-none-important'; %display-none-important { @include display-none-important; }
+@import 'font-futura'; %font-futura { @include font-futura; }
+@import 'font-source'; %font-source { @include font-source; }
+@import 'font-family-inherit'; %font-family-inherit { @include font-family-inherit;}
+@import 'font-weight-600'; %font-weight-600 { @include font-weight-600; }
+@import 'font-weight-700'; %font-weight-700 { @include font-weight-700; }
+@import 'outline-none'; %outline-none { @include outline-none; }
+@import 'placeholder-display-none'; %placeholder-display-none { @include placeholder-display-none; }
+@import 'text-overflow-ellipsis'; %text-overflow-ellipsis { @include text-overflow-ellipsis; }
+
+//specific - check this 
+@import 'height-nav'; %height-nav { @include height-nav; }
+@import 'spacing-search-visible'; %spacing-search-visible { @include spacing-search-visible; }
+
+
+
+//SETTINGS flexbox à la carte 
+@import 'ff'; %ff { @include ff; }
+@import 'ffac'; %ffac { @include ffac; }
+@import 'ffae'; %ffae { @include ffae; }
+@import 'ffas'; %ffas { @include ffas; }
+@import 'ffsb'; %ffsb { @include ffsb; }
+@import 'ffco'; %ffco { @include ffco; }
+@import 'ffjc'; %ffjc { @include ffjc; }
+@import 'ffjs'; %ffjs { @include ffjs; }
+@import 'ffje'; %ffje { @include ffje; }
+@import 'ffrw'; %ffrw { @include ffrw; }
+
+
+
+// SETTINGS spacing à la carte 
+@import 'padt'; %padt { @include padt; }
+@import 'padr'; %padr { @include padr; }
+@import 'padb'; %padb { @include padb; }
+@import 'padl'; %padl { @include padl; }
+@import 'mart'; %mart { @include mart; }
+@import 'marr'; %marr { @include marr; }
+@import 'marb'; %marb { @include marb; }
+@import 'marl'; %marl { @include marl; }
+
+// SETTINGS spacing bundles
+@import 'padv'; %padv { @include padv; }
+@import 'padh'; %padh { @include padh; }
+@import 'marv'; %marv { @include marv; }
+@import 'marh'; %marh { @include marh; }
+
+
+
+
+
+
+
+
+@import 'hdef'; %hdef { @include hdef; }
+
+//SETTINGS font-size à la carte 
+@import 'hxxl-letter-spacing'; %hxxl-letter-spacing { @include hxxl-letter-spacing; }
+@import 'hxl-letter-spacing'; %hxl-letter-spacing { @include hxl-letter-spacing; }
+@import 'h1-letter-spacing'; %h1-letter-spacing { @include h1-letter-spacing; }
+@import 'h2-letter-spacing'; %h2-letter-spacing { @include h2-letter-spacing; }
+@import 'h3-letter-spacing'; %h3-letter-spacing { @include h3-letter-spacing; }
+@import 'h4-letter-spacing'; %h4-letter-spacing { @include h4-letter-spacing; }
+@import 'h5-letter-spacing'; %h5-letter-spacing { @include h5-letter-spacing; }
+@import 'h6-letter-spacing'; %h6-letter-spacing { @include h6-letter-spacing; }
+@import 'p-letter-spacing'; %p-letter-spacing { @include p-letter-spacing; }
+@import 'small-letter-spacing'; %small-letter-spacing { @include small-letter-spacing; }
+
+@import 'hxxl-margin-bottom'; %hxxl-margin-bottom { @include hxxl-margin-bottom; }
+@import 'hxl-margin-bottom'; %hxl-margin-bottom { @include hxl-margin-bottom; }
+@import 'h1-margin-bottom'; %h1-margin-bottom { @include h1-margin-bottom; }
+@import 'h2-margin-bottom'; %h2-margin-bottom { @include h2-margin-bottom; }
+@import 'h3-margin-bottom'; %h3-margin-bottom { @include h3-margin-bottom; }
+@import 'h4-margin-bottom'; %h4-margin-bottom { @include h4-margin-bottom; }
+@import 'h5-margin-bottom'; %h5-margin-bottom { @include h5-margin-bottom; }
+@import 'h6-margin-bottom'; %h6-margin-bottom { @include h6-margin-bottom; }
+@import 'p-margin-bottom'; %p-margin-bottom { @include p-margin-bottom; }
+@import 'small-margin-bottom'; %small-margin-bottom { @include small-margin-bottom; }
+
+@import 'hxxl-line-height'; %hxxl-line-height { @include hxxl-line-height; }
+@import 'hxl-line-height'; %hxl-line-height { @include hxl-line-height; }
+@import 'h1-line-height'; %h1-line-height { @include h1-line-height; }
+@import 'h2-line-height'; %h2-line-height { @include h2-line-height; }
+@import 'h3-line-height'; %h3-line-height { @include h3-line-height; }
+@import 'h4-line-height'; %h4-line-height { @include h4-line-height; }
+@import 'h5-line-height'; %h5-line-height { @include h5-line-height; }
+@import 'h6-line-height'; %h6-line-height { @include h6-line-height; }
+@import 'p-line-height'; %p-line-height { @include p-line-height; }
+@import 'small-line-height'; %small-line-height { @include small-line-height; }
+
+@import 'hxxl-font-size'; %hxxl-font-size { @include hxxl-font-size; }
+@import 'hxl-font-size'; %hxl-font-size { @include hxl-font-size; }
+@import 'h1-font-size'; %h1-font-size { @include h1-font-size; }
+@import 'h2-font-size'; %h2-font-size { @include h2-font-size; }
+@import 'h3-font-size'; %h3-font-size { @include h3-font-size; }
+@import 'h4-font-size'; %h4-font-size { @include h4-font-size; }
+@import 'h5-font-size'; %h5-font-size { @include h5-font-size; }
+@import 'h6-font-size'; %h6-font-size { @include h6-font-size; }
+@import 'p-font-size'; %p-font-size { @include p-font-size; }
+@import 'small-font-size'; %small-font-size { @include small-font-size; }
+
+
+//SETTINGS font-size bundles
+@import 'hxxl'; %hxxl { @include hxxl; } 
+@import 'hxl'; %hxl { @include hxl; } 
+@import 'h1'; %h1 { @include h1; } 
+@import 'h2'; %h2 { @include h2; } 
+@import 'h3'; %h3 { @include h3; } 
+@import 'h4'; %h4 { @include h4; } 
+@import 'h5'; %h5 { @include h5; } 
+@import 'h6'; %h6 { @include h6; } 
+@import 'p'; %p { @include p; } 
+@import 'small'; %small { @include small; }
+
+
+
+

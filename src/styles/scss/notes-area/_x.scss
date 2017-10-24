@@ -1,0 +1,4 @@
+/* WRAP notes-area */
+@import '../com/area'; .notes-area { @import 'notes-area'; @extend %area; & { @include notes-area_Hi2x4; }
+
+}

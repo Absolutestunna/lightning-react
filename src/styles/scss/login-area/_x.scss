@@ -1,0 +1,16 @@
+/* WRAP login-area */
+
+
+@import '../com/area'; @import 'login-area'; .login-area { @extend %area; & { @include login-area_Hi2qf; }
+
+
+	.login { @import 'login'; & { @include login_Hi2rd; }
+
+		@import '../com/login-hd'; @import 'login-hd'; .login-hd { @extend %login-hd; @include login-hd_Hi2nf; }
+		@import '../com/login-input'; @import 'login-input'; .login-input { @extend %login-input; @include login-input_Hi2ng; }
+		@import '../com/dx-custom-input'; @import 'custom-input'; .dx-custom-input {  @extend %dx-custom-input; @include custom-input_Hi2o8; }
+		@import '../com/button'; @import '../com/button-big'; @import 'button'; button { @extend %button; @extend %button-big; @include button_Hi2ok; }
+
+	}
+
+}

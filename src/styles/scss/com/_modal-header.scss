@@ -1,0 +1,9 @@
+@mixin modal-header {
+	
+	@include h4;
+	@media (min-width:$bp1) {
+	@include h3;
+	}
+	font-weight:600;
+	color:#002554;
+}

@@ -1,0 +1,16 @@
+@mixin marr {
+	margin-right:$pad-unit * $padh-trimmed;
+	@media (min-width:$bp1) {
+		margin-right:$pad-unit * $padh-trimmed;
+	}
+	@media (min-width:$bp1-wide) {
+		margin-right:$pad-unit;
+	}
+	@media (min-width:$bp2) {
+		margin-right:$pad-unit * $padh-trimmed;
+	}
+	@media (min-width:$bp3) {
+		margin-right:$pad-unit;
+	}
+
+}

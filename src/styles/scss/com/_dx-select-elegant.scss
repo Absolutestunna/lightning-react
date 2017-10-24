@@ -1,0 +1,50 @@
+@mixin dx-select-elegant {
+	float:left;
+	vertical-align:middle;
+	position:relative;
+	.trigger {
+		position:relative;
+		vertical-align:middle;
+		margin-right:6px;
+		cursor:pointer;
+		@include notouch;
+		@include flexbox;
+		@include flex-direction(row);
+		@include justify-content(flex-end);
+		@include align-items(center);
+		img {
+			margin-top:2px;
+			width:16px;
+			height:16px;
+			//	position:absolute;
+			display:inline-block;
+			top: $sp1;
+		}
+		&::before {
+			display:block;
+			@include border-radius(30px);
+			color:#0057B8;
+			content:attr(data-label);
+			@include transition(.2s all ease-in-out);
+		}
+	}
+	.menu {
+		margin-bottom:$sp5;
+		position:absolute;
+		visibility:hidden;
+		opacity:0;
+		> a {
+			background:#c00;
+			display:block;
+		}
+	}
+	.trigger[data-label="Display"] ~ .menu {
+		@include dx-menu($sp5,$align:right,$arrow-left:null,$arrow-right:50px);
+	}
+	&.menu-visible .menu {
+		opacity:1;
+		visibility:visible;
+		width:200px;
+		height:200px;
+	}
+}

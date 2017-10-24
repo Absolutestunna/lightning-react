@@ -1,0 +1,26 @@
+@mixin modal-block-item {
+
+	border-bottom: 1px solid #E1E6EB;
+	&:last-of-type {
+		border-bottom:none;
+	}
+	
+	border-left: 2px solid #E1E6EB;
+	padding-top:$sp2;
+	padding-bottom:$sp2;
+	padding-right:$sp2;
+
+
+
+	@include flexbox;
+	@include flex-direction(row);
+	@include justify-content(justify);
+	@include align-items(center);
+
+	padding-left:$sp1;
+	@media (min-width:$bp2) {
+		padding-left:$sp2;
+	}
+
+
+}

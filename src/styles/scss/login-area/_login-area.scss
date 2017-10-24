@@ -1,0 +1,35 @@
+@mixin login-area_Hi2qf {
+	@media (min-width:$bp1) {
+	padding-left:$pad-unit-trimmed;
+	padding-right:$pad-unit-trimmed;
+}
+
+	@media (min-width:$bp1-wide) {
+		padding-left:0;
+		padding-right:0;
+		
+
+		
+	}
+	
+	.login { 
+	padding-top:$pad-unit-trimmed;
+	padding-bottom:$sp1;
+		background:#fff;
+
+	padding-left:$pad-unit-trimmed;
+	padding-right:$pad-unit-trimmed;
+
+	@media (min-width:$bp1-wide) {
+		padding-top:$pad-unit;
+		padding-bottom:$sp1;
+
+		padding-left:$pad-unit;
+		padding-right:$pad-unit;
+	}
+
+
+
+
+}
+}

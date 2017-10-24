@@ -1,0 +1,10 @@
+@mixin h1 {
+	@extend %hdef;
+	@extend %h1-font-size;
+	@extend %h1-line-height;
+	
+
+	
+}
+
+

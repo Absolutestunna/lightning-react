@@ -1,0 +1,8 @@
+@mixin modal-container {
+	width:100%;
+	
+	//	@include padb;
+	@include flex(1 1 auto);
+	overflow:auto;
+	padding-bottom:$sp4;
+}

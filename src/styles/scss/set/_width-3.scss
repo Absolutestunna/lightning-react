@@ -1,0 +1,5 @@
+@import '../var/widths';
+
+@mixin width-3 {
+	max-width: $def-width * 3;
+}

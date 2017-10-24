@@ -1,0 +1,13 @@
+@mixin login-hd_Hi2nf {
+
+
+	padding-bottom:$pad-unit-trimmed;
+	@media (min-height: 400px) and (min-width: $bp1-wide) {
+
+	padding-bottom:$pad-unit;
+		
+	}
+	
+
+	
+}

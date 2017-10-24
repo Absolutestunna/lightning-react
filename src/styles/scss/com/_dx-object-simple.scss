@@ -1,0 +1,20 @@
+@mixin dx-text-simple {
+
+	padding-left:$sp2;
+	padding-right:$sp2;
+	span {
+		display:inline-block;
+	}
+	> .dx-col {
+		max-width:1400px;
+		margin:auto;
+	}
+	@extend %p;
+
+	.align-center {
+		text-align:center;
+	}
+
+	
+
+}

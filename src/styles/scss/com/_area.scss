@@ -1,0 +1,7 @@
+$area_Hi2xm-width:32rem;
+@mixin area_Hi2xm {
+	max-width:$area_Hi2xm-width;
+	margin-left:auto;
+	margin-right:auto;
+	@extend %p-font-size;
+}

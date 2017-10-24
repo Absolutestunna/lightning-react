@@ -1,0 +1,7 @@
+@mixin small-font-size {
+	font-size: $small-font-size;
+	@include small-letter-spacing;
+}
+
+
+

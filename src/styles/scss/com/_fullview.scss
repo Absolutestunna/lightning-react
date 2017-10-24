@@ -1,0 +1,43 @@
+@mixin fullview {
+
+	display:none;
+
+	.fullview-content {
+		@include flexbox;
+		@include flex-direction(column);
+		@include justify-content(center);
+		@include align-content(center);
+		text-align:center;
+		height:100vh;
+	}
+	.mockup-note {
+		width:300px;
+		text-align:center;
+		background:transparentize(#0057B8,.9);
+		margin-left:auto;
+		margin-right:auto;
+		padding:1rem;
+	}
+	.mockup-note-exit {
+		display:inline-block;
+		cursor:pointer;
+		.x {
+			font-size:1.3rem;
+		}
+		color:#0057B8;
+		.text {
+			text-decoration:underline;
+			font-weight:600;
+			font-size:1rem;
+		}
+		&:hover {
+		}
+	}
+	
+
+
+	
+
+
+
+}

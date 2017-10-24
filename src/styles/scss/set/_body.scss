@@ -1,0 +1,10 @@
+$body-bg: #F3F3F3;
+@mixin body {
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	margin:0;
+	padding:0;
+	@extend %font-source;
+}
+
+

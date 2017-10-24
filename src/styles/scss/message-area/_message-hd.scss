@@ -1,0 +1,18 @@
+@mixin message-hd_Hj5t9 {
+
+	padding-left:$pad-unit-trimmed;
+	padding-right:$pad-unit-trimmed;
+	
+	
+	@media (min-width:$bp1) {
+	padding-left:$pad-unit;
+	padding-right:$pad-unit;
+}
+	@media (min-width:$bp1-wide) {
+		padding-left:$pad-unit;
+		padding-right:$pad-unit;
+
+	}
+	
+
+}

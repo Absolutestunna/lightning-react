@@ -1,0 +1,28 @@
+@mixin dx-tag {
+	display:inline-block;
+	vertical-align:middle;
+	margin-right:6px;
+
+	&::before {
+		display:block;
+		@include border-radius(30px);
+		font-weight: 600;
+		line-height:$sp3;
+
+		color:#fff;
+		content:attr(data-label);
+	}
+	&[data-label="OPEN"] {
+		&::before {
+			color:#DA3130;
+		}
+	}
+	&[data-label="CLOSED"] {
+		&::before {
+			color:#DA3130;
+		}
+	}
+	
+
+
+}

@@ -1,0 +1,27 @@
+@mixin modal-close {
+		margin-right:-$sp1;
+
+	width:$pad-unit *1.5;
+	height:$pad-unit *1.5;
+
+	@include flexbox;
+	@include flex-direction(row);
+	@include justify-content(center);
+	@include align-items(center);
+
+
+
+
+	cursor:pointer;
+
+	img {
+		width: $sp3;
+		height: $sp3;
+		display:inline-block;
+	}
+
+	
+
+
+
+}

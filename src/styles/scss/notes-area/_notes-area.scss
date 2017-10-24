@@ -1,0 +1,28 @@
+@mixin notes-area_Hi2x4 {
+	padding-top: $pad-unit;
+
+	padding-left:$pad-unit-trimmed;
+	padding-right:$pad-unit-trimmed;
+	
+	@media (min-width:$bp1) {
+	padding-left:$pad-unit;
+	padding-right:$pad-unit;
+		
+	}	
+	
+	@media (min-width:$bp1-wide) {
+		padding-left:$pad-unit;
+		padding-right:$pad-unit;
+	}
+
+	p {
+		margin-top:0;
+	}
+
+	color: #54565B;
+	a {
+		color: #54565B;
+
+	}
+
+}

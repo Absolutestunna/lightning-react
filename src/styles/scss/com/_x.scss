@@ -1,0 +1,121 @@
+@import 'banner'; %banner { @include banner; }
+@import 'banner-photo'; %banner-photo { @include banner-photo; }
+@import 'button'; %button { @include button; } 
+@import 'button-exit'; %button-exit { @include button-exit; }
+@import 'cview-modal'; %cview-modal { @include cview-modal; } 
+@import 'data-subform'; %data-subform { @include data-subform; }
+@import 'dx-back'; %dx-back { @include dx-back; }
+@import 'dx-block'; %dx-block { @include dx-block; }
+@import 'dx-card'; %dx-card { @include dx-card; }
+@import 'dx-checkbox'; %dx-checkbox { @include dx-checkbox;}
+@import 'language-menu'; %language-menu { @include language-menu;}
+@import 'dx-compare'; %dx-compare { @include dx-compare; }
+@import 'dx-custom-input'; %dx-custom-input { @include dx-custom-input; }
+@import 'dx-custom-select'; %dx-custom-select { @include dx-custom-select; }
+@import 'dx-disclaimer'; %dx-disclaimer { @include dx-disclaimer; }
+@import 'dx-footnote'; %dx-footnote { @include dx-footnote; }
+@import 'dx-iconmenu'; %dx-iconmenu { @include dx-iconmenu; }
+@import 'dx-info'; %dx-info { @include dx-info; }
+@import 'dx-large-type'; %dx-large-type { @include dx-large-type; }
+@import 'dx-loading-animation'; %dx-loading-animation { @include dx-loading-animation; }
+@import 'dx-modal'; %dx-modal { @include dx-modal; } 
+@import 'dx-modal-bs'; %dx-modal-bs { @include dx-modal-bs; }
+@import 'dx-nav-simple'; %dx-nav-simple { @include dx-nav-simple; }
+@import 'dx-object';  %dx-object { @include dx-object; } 
+@import 'dx-object-general'; %dx-object-general { @include dx-object-general; }
+@import 'dx-pagehead'; %dx-pagehead { @include dx-pagehead; }
+@import 'dx-password-req'; %dx-password-req { @include dx-password-req } 
+@import 'dx-pill'; %dx-pill { @include dx-pill; }
+@import 'dx-results'; %dx-results { @include dx-results; }
+@import 'dx-results-header'; %dx-results-header { @include dx-results-header; }
+@import 'dx-row'; %dx-row { @include dx-row; } 
+@import 'dx-row-button'; %dx-row-button { @include dx-row-button; }
+@import 'dx-row-checkbox'; %dx-row-checkbox { @include dx-row-checkbox; }
+@import 'dx-row-h2'; %dx-row-h2 { @include dx-row-h2; }
+@import 'dx-row-links'; %dx-row-links { @include dx-row-links; }
+@import 'dx-row-metadata'; %dx-row-metadata { @include dx-row-metadata; }
+@import 'dx-row-single-link'; %dx-row-single-link { @include dx-row-single-link; }
+@import 'dx-row-table'; %dx-row-table { @include dx-row-table; }
+@import 'dx-row-tag'; %dx-row-tag { @include dx-row-tag; }
+@import 'dx-section'; %dx-section { @include dx-section; } 
+@import 'dx-table'; %dx-table { @include dx-table; }
+@import 'dx-tag'; %dx-tag { @include dx-tag; }
+@import 'dx-text-simple'; %dx-text-simple { @include dx-text-simple; }
+@import 'export'; %export { @include export; }
+@import 'fullview'; %fullview { @include fullview; } 
+@import 'gen-table-label'; %gen-table-label { @include gen-table-label; }
+@import 'gen-table'; %gen-table { @include gen-table; }
+@import 'gen-table-checkbox'; %gen-table-checkbox { @include gen-table-checkbox ; }
+@import 'gen-table-header'; %gen-table-header { @include gen-table-header; }
+@import 'gen-table-item'; %gen-table-item { @include gen-table-item; }
+@import 'gen-table-item-disabled'; %gen-table-item-disabled { @include gen-table-item-disabled; }
+@import 'gen-table-item-hd'; %gen-table-item-hd { @include gen-table-item-hd; }
+@import 'gen-table-items'; %gen-table-items { @include gen-table-items; }
+@import 'gen-table-li'; %gen-table-li { @include gen-table-li; }
+@import 'gen-table-ul'; %gen-table-ul { @include gen-table-ul; }
+@import 'green'; %green { @include green; }
+@import 'hidden'; %hidden { @include hidden; }
+@import 'listbox'; %listbox { @include listbox; } 
+@import 'masthead'; %masthead { @include masthead; }
+@import 'modal'; %modal { @include modal; } 
+@import 'modal-2col'; %modal-2col { @include modal-2col; }
+@import 'modal-block'; %modal-block { @include modal-block; }
+@import 'modal-block-header'; %modal-block-header { @include modal-block-header; }
+@import 'modal-block-item'; %modal-block-item { @include modal-block-item; }
+@import 'modal-close'; %modal-close { @include modal-close; } 
+@import 'modal-col-header1'; %modal-col-header1 { @include modal-col-header1; }
+@import 'modal-col-header2'; %modal-col-header2 { @include modal-col-header2; }
+@import 'modal-container'; %modal-container { @include modal-container; } 
+@import 'modal-footer-area'; %modal-footer-area { @include modal-footer-area; } 
+@import 'modal-go'; %modal-go { @include modal-go; }
+@import 'modal-header'; %modal-header { @include modal-header; } 
+@import 'modal-header-area'; %modal-header-area { @include modal-header-area; } 
+@import 'modal-pill-item'; %modal-pill-item { @include modal-pill-item; }
+@import 'modal-pills-area'; %modal-pills-area { @include modal-pills-area; }
+@import 'password-strength'; %password-strength { @include password-strength; }
+@import 'pill-name-account'; %pill-name-account { @include pill-name-account;}
+@import 'search'; %search { @include search; }
+@import 'section-bar'; %section-bar { @include section-bar; } 
+@import 'table-excel'; %table-excel { @include table-excel; }
+@import 'tmp-modal-window-button'; %tmp-modal-window-button { @include tmp-modal-window-button; }
+@import 'to-from'; %to-from { @include to-from;}
+@import 'wrap'; %wrap { @include wrap; }
+
+
+/* COMMON app */
+//@import 'body'; body { @include body; }
+@import 'page-header'; %page-header { @include page-header; }
+@import 'footer'; footer { @include footer; }
+
+/* COMMON form */
+//@import 'button'; %button { @include button; }
+@import 'button-big'; %button-big { @include button-big; }
+@import 'custom-input'; %custom-input { @include custom-input; }
+
+/* COMMON area */
+@import 'area'; %area { @include area_Hi2xm; }
+
+/* COMMON login-area */
+@import 'login-hd'; %login-hd { @include login-hd; }
+@import 'login-input'; %login-input { @include login-input; }
+
+/* COMMON help-area */
+@import 'help-area'; %help-area { @include help-area; }
+@import 'help-items'; %help-items { @include help-items; }
+@import 'help-hd'; %help-hd { @include help-hd; }
+
+@import 'message-area'; %message-area { @include message-area; }
+@import 'message-items'; %message-items { @include message-items; }
+@import 'message-hd'; %message-hd { @include message-hd; }
+@import 'message-text'; %message-text { @include message-text; }
+
+
+@import 'accordion-item'; %accordion-item { @include accordion-item; }
+@import 'accordion-label'; %accordion-label { @include accordion-label; }
+@import 'accordion-content'; %accordion-content { @include accordion-content; }
+
+/* COMMON notes-area */
+
+
+
+
