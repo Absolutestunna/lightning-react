@@ -5,7 +5,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
     context: resolve(__dirname, 'src'),
     entry: [
-        './scripts/main.js'
+        './main.js'
         // the entry point of our app
     ],
     output: {
@@ -38,6 +38,11 @@ module.exports = {
             {
                 test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)/,
                 use: 'url-loader'
+            },
+
+           {
+                test: require.resolve('./src/main'),
+                loaders: ["expose-loader?reactapp", "babel-loader?presets[]=react,presets[]=es2015"]
             }
         ]
     },
@@ -47,9 +52,9 @@ module.exports = {
 
         new ExtractTextPlugin({filename: 'styles.css', allChunks: true}),
         //
-        new webpack.ProvidePlugin({
-          init: require.resolve('./src/scripts/main'),
-          // ...
-        })
+        // new webpack.ProvidePlugin({
+        //   init: require.resolve('./src/scripts/main'),
+        //   // ...
+        // })
     ],
 };

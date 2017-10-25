@@ -60,5 +60,5 @@ typings/
 #webstrom
 .idea/
 
-#dist
+#
 dist/
